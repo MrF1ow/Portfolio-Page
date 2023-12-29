@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.max-width{
+  max-width: 1920px;
+  padding: 0 80px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar */
+
+.navbar{
+  width: 100%;
+  padding: 30px 0;
+}
+
+.navbar-content{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-name{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-options-main{
+  list-style: none;
+  display: inline-flex;
+}
+
+.nav-options-main li{
+  margin: 0 20px;
+}
+
+/* Home Section */
+
+.home-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 0;
+}
+
+.image-pfp{
+  width: 40%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.image-pfp img{
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+  border: 2px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-links{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.social-links a{
+  color: black;
+  font-size: 2.25rem;
+  margin: 0 5%;
+}
+
+/*Project Section*/
+
+.projects{
+  width: 100vw;
+  background-color: rgb(0, 238, 255);
+  height: 500px;
+  margin-top: 1000px;
+}
+
