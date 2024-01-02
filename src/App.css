@@ -14,7 +14,15 @@ body{
 
 .max-width{
   max-width: 768px;
-  padding: 30px 80px;
+  padding: 20px 80px;
   margin: 0 auto;
+}
+
+.title{
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white_light);
+  letter-spacing: 1.5px;
+
 }
 

@@ -6,6 +6,13 @@
   --blue_light: hsla(194 100% 69% / 1);
   --blue_med: hsla(217 100% 56% / 1);
   --white_light: hsla(360 100% 100% / 1);
+
+  --radii: 0.5em;
+  --card_title_size: 1.5rem;
+  --card_description_size: 1rem;
+  --card_description_weight: 400;
+  --card_description_line_height: 30px;
+
 }
 
 body {
