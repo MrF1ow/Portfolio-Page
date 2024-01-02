@@ -7,10 +7,13 @@
 body{
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  background: linear-gradient(90deg, var(--color_dark_bg_blue), var(--color_med_bg_blue), var(--color_li_bg_blue));
+
 }
 
+
 .max-width{
-  max-width: 1920px;
+  max-width: 768px;
   padding: 30px 80px;
   margin: 0 auto;
 }

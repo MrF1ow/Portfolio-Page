@@ -1,9 +1,11 @@
 :root{
-  --color_darkest_blue: #000814;
-  --color_medium_blue: #001d3d;
-  --color_lighter_blue: #003566;
-  --color_medium_yellow: #ffc300;
-  --color_bright_yellow: #ffd60a;
+  --color_dark_bg_blue: #000814;
+  --color_med_bg_blue: #001d3d;
+  --color_li_bg_blue: #003566;
+
+  --blue_light: hsla(194 100% 69% / 1);
+  --blue_med: hsla(217 100% 56% / 1);
+  --white_light: hsla(360 100% 100% / 1);
 }
 
 body {
