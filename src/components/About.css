@@ -1,0 +1,24 @@
+.about{
+    width: 100%;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-top: 20px;
+}
+
+.about-text{
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--white_light);
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.about-text:nth-last-child(1){
+    margin-bottom: 0px;
+}

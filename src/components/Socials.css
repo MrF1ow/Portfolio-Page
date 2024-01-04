@@ -1,0 +1,23 @@
+.socials{
+    width: 100%;
+}
+
+.social-links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-links a {
+    color: var(--blue_light);
+    font-size: 2.25rem;
+    margin: 0 5%;
+    transition: all 0.15s ease-in-out;
+}
+
+.social-links a:hover {
+    color: var(--white_light);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 2.5px var(--white_light));
+}

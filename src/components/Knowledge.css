@@ -1,0 +1,12 @@
+.knowledge{
+    width: 100%;
+}
+
+.knowledge-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}

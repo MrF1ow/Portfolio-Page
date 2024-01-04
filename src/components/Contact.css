@@ -1,0 +1,102 @@
+.contact-content {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--blue_med) 0%, var(--blue_light) 55%, var(--blue_med) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--white_light);
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+    padding: 20px;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: left;
+}
+
+.input-sect {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-sect label {
+    font-size: var(--card_description_size);
+    font-weight: var(--card_description_weight);
+    color: var(--white_light);
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.input-sect textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.input-sect input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.contact-form-button{
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: var(--blue_med);
+    color: var(--white_light);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.contact-form-button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.contact-form-button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.contact-form-button:hover span{
+    padding-right: 25px;
+}
+
+.contact-form-button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
