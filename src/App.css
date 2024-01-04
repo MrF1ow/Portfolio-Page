@@ -4,13 +4,16 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 16px;
+}
+
 body{
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   background: linear-gradient(90deg, var(--color_dark_bg_blue), var(--color_med_bg_blue), var(--color_li_bg_blue));
 
 }
-
 
 .max-width{
   max-width: 768px;
@@ -24,5 +27,27 @@ body{
   color: var(--white_light);
   letter-spacing: 1.5px;
 
+}
+
+@media (max-width: 1025px){
+  html{
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px){
+  html{
+    font-size: 13px;
+  }
+  .max-width{
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 576px){
+  html{
+    font-size: 12px;
+  }
+  .max-width{
+    padding: 20px 20px;
+  }
 }
 
