@@ -1,11 +1,11 @@
 const knowledge_data = [
     {
         title: 'Languages',
-        text: ["Python", "JavaScript", "C++/C", "SQL", "HTML", "CSS"]
+        text: ["Python", "JavaScript", "C++/C", "SQL", "HTML", "CSS", "PHP"]
     },
     {
         title: 'Frameworks',
-        text: ["React", "Node.js", "Express", "Flask"]
+        text: ["React", "Node.js", "Express", "Flask", "RESTful API"]
     },
     {
         title: 'Tools',
