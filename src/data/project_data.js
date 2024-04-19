@@ -1,4 +1,4 @@
-import { IoMdBusiness } from "react-icons/io";
+import { FaCode } from "react-icons/fa";
 import { CgGym } from "react-icons/cg";
 import { FaImage } from "react-icons/fa6";
 
@@ -18,11 +18,11 @@ const project_data = [
         "link": "https://github.com/MrF1ow/Image_Viewer_Editor"
     },
     {
-        "title": "Company Database Management System",
-        "description": "A company database management system used to keep track of employees and the associated information.",
-        "icon": < IoMdBusiness />,
-        "link": ""
-    }
+        "title": "Small Shell",
+        "description": "A small shell that allows users to run commands and execute programs.",
+        "icon": < FaCode />,
+        "link": "https://github.com/MrF1ow/smallsh"
+    },
 ]
 
 export default project_data;

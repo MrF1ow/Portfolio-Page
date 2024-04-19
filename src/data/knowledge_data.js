@@ -1,7 +1,7 @@
 const knowledge_data = [
     {
         title: 'Languages',
-        text: ["Python", "JavaScript", "C++/C", "SQL", "HTML", "CSS", "PHP"]
+        text: ["Python", "JavaScript", "TypeScript", "C++/C", "SQL"]
     },
     {
         title: 'Frameworks',
@@ -13,7 +13,7 @@ const knowledge_data = [
     },
     {
         title: 'Classes',
-        text: ["Data Structures", "Algorithms", "Software Engineering", "Computer Architecture", "Computer Networks", "Databases", "Web Development"]
+        text: ["Data Structures", "Algorithms", "Software Engineering", "Computer Architecture", "Computer Networks", "Databases", "Operating Systems"]
     }
 ]
 
