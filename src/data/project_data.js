@@ -1,4 +1,4 @@
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaMusic } from "react-icons/fa";
 import { CgGym } from "react-icons/cg";
 import { FaImage } from "react-icons/fa6";
 
@@ -19,10 +19,16 @@ const project_data = [
     },
     {
         "title": "Small Shell",
-        "description": "A small shell that allows users to run commands and execute programs.",
+        "description": "A small shell that provides a compact command-line interface for executing commands.",
         "icon": < FaCode />,
         "link": "https://github.com/MrF1ow/smallsh"
     },
+    {
+        "title": "Playlist Partner",
+        "description": "Full Stack Web Application that allows users to generate filtered based playlists utilizing Spotify API.",
+        "icon": <FaMusic />,
+        "link": "https://playlist-partner.vercel.app/"
+    }
 ]
 
 export default project_data;
