@@ -11,6 +11,12 @@ function HeaderSection(): JSX.Element {
   useEffect(() => {
     const handResize = () => {
       setIsDesktop(window.innerWidth > 768);
+      if (window.innerWidth > 768) {
+        setHeaderStyle("w-full flex justify-center");
+        setIsOpen(false);
+      }else{
+        setHeaderStyle("w-full flex justify-start");
+      }
     };
 
     window.addEventListener("resize", handResize);
@@ -19,12 +25,6 @@ function HeaderSection(): JSX.Element {
       window.removeEventListener("resize", handResize);
     };
   }, []);
-
-  useEffect(() => {
-    setHeaderStyle(
-      isOpen ? "w-full flex justify-center" : "w-full flex justify-end"
-    );
-  }, [isOpen]);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 

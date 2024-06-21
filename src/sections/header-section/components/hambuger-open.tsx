@@ -1,5 +1,4 @@
 function HamburgerOpenIcon({ toggleMenu }: HamburgerIconProps): JSX.Element {
-
   return (
     <div onClick={toggleMenu}>
       <svg
@@ -13,7 +12,7 @@ function HamburgerOpenIcon({ toggleMenu }: HamburgerIconProps): JSX.Element {
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
         />
       </svg>
     </div>
