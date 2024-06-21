@@ -1,9 +1,7 @@
-import React from "react";
-
 function Navigation(): JSX.Element {
   return (
     <nav>
-      <ul className="flex gap-10">
+      <ul className="flex font-league lg:gap-20 lg:text-2xl md:gap-16 md:text-2xl">
         <li>
           <a href="#home">Home</a>
         </li>

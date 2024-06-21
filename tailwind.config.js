@@ -9,6 +9,9 @@ export default {
       fontSize: {
         base: '16px',
       },
+      backgroundImage:{
+        'custom-gradient': 'linear-gradient(to bottom, #000814 , #003566)'
+      },
       colors: {
         darkblue: '#000814',
         navyblue: '#001d3d',
