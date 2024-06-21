@@ -1,0 +1,3 @@
+interface HamburgerIconProps {
+    toggleMenu: () => void;
+}

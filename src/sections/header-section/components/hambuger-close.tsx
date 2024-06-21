@@ -1,7 +1,6 @@
-function HamburgerMenu(): JSX.Element {
-
+function HamburgerCloseIcon({ toggleMenu }: HamburgerIconProps): JSX.Element {
   return (
-    <div className='w-full flex justify-end'>
+    <div onClick={toggleMenu}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -13,11 +12,11 @@ function HamburgerMenu(): JSX.Element {
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+          d="M6 18 18 6M6 6l12 12"
         />
       </svg>
     </div>
   );
 }
 
-export default HamburgerMenu;
+export default HamburgerCloseIcon;
