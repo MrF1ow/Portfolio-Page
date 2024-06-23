@@ -6,7 +6,8 @@ interface NavItemProps {
   sectionRef: RefObject<HTMLDivElement>;
   scrollToSection: (ref: RefObject<HTMLDivElement>) => void;
   setHoveredItem: (index: number | null) => void;
-  hoveredItem: number | null;
+  index: number;
+  currentHoveredItem: number | null;
 }
 
 function NavItem({
@@ -14,17 +15,17 @@ function NavItem({
   sectionRef,
   scrollToSection,
   setHoveredItem,
-  hoveredItem,
+  index,
+  currentHoveredItem,
 }: NavItemProps): JSX.Element {
   return (
     <motion.li
       className="cursor-pointer"
       onClick={() => scrollToSection(sectionRef)}
-      onMouseEnter={() => {
-        setHoveredItem(hoveredItem);
-        console.log("hoveredItem", hoveredItem);
-      } }
+      onMouseEnter={() => setHoveredItem(index)}
       onMouseLeave={() => setHoveredItem(null)}
+      animate={{ opacity: currentHoveredItem !== null && currentHoveredItem !== index ? 0.5 : 1 }}
+      transition={{ duration: 0.2}}
     >
       {text}
     </motion.li>

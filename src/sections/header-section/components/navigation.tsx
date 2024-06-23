@@ -8,15 +8,6 @@ function Navigation({
 }: NavigationProps): JSX.Element {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
 
-  // const handleMouseEnter = (index: number) => {
-  //   setHoveredItem(index);
-  //   console.log("hoveredItem", hoveredItem);
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setHoveredItem(null);
-  // };
-
   return (
     <nav>
       <ul className="flex font-league lg:gap-20 lg:text-2xl md:gap-16 md:text-2xl">
@@ -25,28 +16,32 @@ function Navigation({
           sectionRef={sectionRefs.homeRef}
           scrollToSection={scrollToSection}
           setHoveredItem={setHoveredItem}
-          hoveredItem={hoveredItem}
+          index={0}
+          currentHoveredItem={hoveredItem}
         />
         <NavItem
           text="About"
           sectionRef={sectionRefs.aboutRef}
           scrollToSection={scrollToSection}
           setHoveredItem={setHoveredItem}
-          hoveredItem={hoveredItem}
+          index={1}
+          currentHoveredItem={hoveredItem}
         />
         <NavItem
           text="Projects"
           sectionRef={sectionRefs.projectsRef}
           scrollToSection={scrollToSection}
           setHoveredItem={setHoveredItem}
-          hoveredItem={hoveredItem}
+          index={2}
+          currentHoveredItem={hoveredItem}
         />
         <NavItem
           text="Contact"
           sectionRef={sectionRefs.contactRef}
           scrollToSection={scrollToSection}
           setHoveredItem={setHoveredItem}
-          hoveredItem={hoveredItem}
+          index={3}
+          currentHoveredItem={hoveredItem}
         />
       </ul>
     </nav>

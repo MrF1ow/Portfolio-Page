@@ -22,7 +22,7 @@ function App(): JSX.Element {
   }
 
   return (
-    <div className="w-screen h-total bg-custom-gradient text-slate-50 py-8 px-4 xl:max-w-screen-xl lg:max-w-screen-lg">
+    <div className="w-screen h-full text-slate-50 py-8 px-4 xl:max-w-screen-xl lg:max-w-screen-lg">
       <HeaderSection scrollToSection={scrollToSection} sectionRefs={sectionRefs}/>
       <HomeSection sectionRef={homeRef}/>
     </div>
