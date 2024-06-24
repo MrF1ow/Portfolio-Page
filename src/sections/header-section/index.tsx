@@ -3,6 +3,17 @@ import HamburgerOpenIcon from "./components/hambuger-open";
 import HamburgerMenu from "./components/hamburger-menu";
 import { useState, useEffect } from "react";
 
+/*
+  HeaderSection component
+  - Contains the navigation bar
+  - Changes the style of the navigation bar based on the screen size
+  - Prevents scrolling when the menu is open for mobile
+
+  @param scrollToSection: function
+  @param sectionRefs: SectionRefs
+
+  @returns JSX.Element
+*/
 function HeaderSection({
   scrollToSection,
   sectionRefs,
@@ -13,6 +24,7 @@ function HeaderSection({
     "container fixed z-10 flex justify-center"
   );
 
+  // set header style based on screen size
   useEffect(() => {
     const handResize = () => {
       setIsDesktop(window.innerWidth > 768);
@@ -31,6 +43,7 @@ function HeaderSection({
     };
   }, []);
 
+  // prevent scrolling when the menu is open for mobile
   useEffect(() => {
     const handleBodyScroll = () => {
       document.body.style.overflow = isOpen ? "hidden" : "auto";

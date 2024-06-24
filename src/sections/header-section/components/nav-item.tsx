@@ -10,6 +10,19 @@ interface NavItemProps {
   currentHoveredItem: number | null;
 }
 
+/*
+  NavItem component
+  - Contains a navigation item
+
+  @param text: string
+  @param sectionRef: RefObject<HTMLDivElement>
+  @param scrollToSection: function
+  @param setHoveredItem: function
+  @param index: number
+  @param currentHoveredItem: number | null
+
+  @returns JSX.Element
+*/
 function NavItem({
   text,
   sectionRef,
@@ -25,7 +38,7 @@ function NavItem({
       onMouseEnter={() => setHoveredItem(index)}
       onMouseLeave={() => setHoveredItem(null)}
       animate={{ opacity: currentHoveredItem !== null && currentHoveredItem !== index ? 0.5 : 1 }}
-      transition={{ duration: 0.2}}
+      transition={{ duration: 0.3}}
     >
       {text}
     </motion.li>

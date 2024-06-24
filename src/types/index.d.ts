@@ -16,3 +16,7 @@ interface NavigationProps {
 interface SectionProps {
   sectionRef: RefObject<HTMLDivElement>;
 }
+
+type AnimatedTextProps = {
+  text: string;
+};

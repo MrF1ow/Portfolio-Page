@@ -1,3 +1,11 @@
+
+/*
+  This component is used to render the hamburger icon when the menu is open.
+  The icon is a SVG element that when clicked, will close the menu.
+
+  @param toggleMenu: function
+  @returns JSX.Element
+*/
 function HamburgerCloseIcon({ toggleMenu }: HamburgerIconProps): JSX.Element {
   return (
     <div onClick={toggleMenu}>

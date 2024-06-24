@@ -2,6 +2,12 @@ import { useRef, RefObject } from "react";
 import HeaderSection from "./sections/header-section";
 import HomeSection from "./sections/home-section";
 
+/*
+  App component
+  - Contains all the sections of the website
+
+  @returns JSX.Element
+*/
 function App(): JSX.Element {
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -22,7 +28,7 @@ function App(): JSX.Element {
   }
 
   return (
-    <div className="w-screen h-full text-slate-50 py-8 px-4 xl:max-w-screen-xl lg:max-w-screen-lg">
+    <div className="w-screen gap-20 text-slate-50 font-league py-8 px-4 xl:max-w-screen-xl lg:max-w-screen-lg">
       <HeaderSection scrollToSection={scrollToSection} sectionRefs={sectionRefs}/>
       <HomeSection sectionRef={homeRef}/>
     </div>
