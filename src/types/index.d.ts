@@ -17,6 +17,12 @@ interface SectionProps {
   sectionRef: RefObject<HTMLDivElement>;
 }
 
+interface ImageProperties {
+  src: string;
+  alt: string;
+  style: string;
+}
+
 type AnimatedTextProps = {
   text: string;
 };
