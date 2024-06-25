@@ -10,33 +10,36 @@ import useMeasure from "react-use-measure";
 function HomeSection({ sectionRef }: SectionProps): JSX.Element {
   const images = Object.values(imageData) as ImageProperties[];
 
-  let [ref, { width }] = useMeasure();
+  // gives width of the container
+  let [containerRef, { width }] = useMeasure();
 
+  // xTranslation is the motion value that will be animated
   const xTranslation = useMotionValue(0);
 
   useEffect(() => {
-    if (!width) return;
 
-    const finalPosition = -width / 2 - 8;
-    const controls = animate(xTranslation, [0, finalPosition], {
-      type: "tween",
+    let controls;
+    let finalPosition = -width / 2 - 8;
+
+    controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
-      duration: 10,
+      duration: 25,
       repeat: Infinity,
       repeatType: "loop",
       repeatDelay: 0,
     });
 
     return controls.stop;
-  }, [width, xTranslation]);
+  }, [xTranslation, width]);
+
   return (
     <div ref={sectionRef} className="py-20 w-full">
       <motion.div
-        ref={ref}
+        ref={containerRef}
         className="absolute left-0 flex gap-4"
         style={{ x: xTranslation }}
       >
-        {images.map((image, index) => (
+        {[...images].map((image, index) => (
           <Card
             src={image.src}
             alt={image.alt}
