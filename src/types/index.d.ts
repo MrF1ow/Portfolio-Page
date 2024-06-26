@@ -20,9 +20,14 @@ interface SectionProps {
 interface ImageProperties {
   src: string;
   alt: string;
-  style: string;
 }
 
 type AnimatedTextProps = {
   text: string;
 };
+
+interface AnimationValues {
+  xTranslation: MotionValue<number>;
+  totalWidth: React.MutableRefObject<number>;
+  direction: React.MutableRefObject<"left" | "right">;
+}

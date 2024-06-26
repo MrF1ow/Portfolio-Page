@@ -1,7 +1,15 @@
+import { forwardRef } from "react";
 
+/*
+  Card component
 
-function Card({ src, alt, style }: ImageProperties): JSX.Element {
-  return <img className={style} src={src} alt={alt} />;
-}
+  @param src: string
+  @param alt: string
+
+  @returns JSX.Element
+*/
+const Card = forwardRef<HTMLImageElement, ImageProperties>(({ src, alt }, ref) => (
+  <img ref={ref} className='h-48 rounded-lg pointer-events-none' src={src} alt={alt} />
+));
 
 export default Card;
