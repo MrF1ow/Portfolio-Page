@@ -2,6 +2,7 @@ import { animate, useMotionValue, motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import useMeasure from "react-use-measure";
 import Card from "./card";
+import imageData from "../../../data/image";
 
 interface CarouselProps {
   dir: string;
@@ -57,7 +58,9 @@ function Carousel({ dir, images }: CarouselProps): JSX.Element {
     return controls.stop;
   }, [xTranslation, totalWidth]);
 
-  const loopedImages = [...images, ...images];
+  const imagesV2 = Object.values(imageData) as ImageProperties[];
+
+  const loopedImages = [...imagesV2, ...imagesV2];
 
   return (
     <motion.div
