@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
+import { AsciiRenderer } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import Box from "./box";
 
@@ -25,6 +26,7 @@ function Cube(): JSX.Element {
           height={300}
         />
       </EffectComposer> */}
+
     </Canvas>
   );
 }

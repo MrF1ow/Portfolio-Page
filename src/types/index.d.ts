@@ -4,21 +4,6 @@ interface HamburgerIconProps {
   toggleMenu: () => void;
 }
 
-interface SectionRefs {
-  homeRef: RefObject<HTMLDivElement>;
-  aboutRef: RefObject<HTMLDivElement>;
-  projectsRef: RefObject<HTMLDivElement>;
-  contactRef: RefObject<HTMLDivElement>;
-}
-
-interface NavigationProps {
-  scrollToSection: (ref: RefObject<HTMLDivElement>) => void;
-  sectionRefs: SectionRefs;
-}
-interface SectionProps {
-  sectionRef: RefObject<HTMLDivElement>;
-}
-
 interface ImageProperties {
   src: string;
   alt: string;
@@ -42,4 +27,8 @@ interface LinePercentProps {
 interface ExSlotProps {
   title: string;
   years: string;
+}
+
+interface NavProps {
+  activeNav: string;
 }

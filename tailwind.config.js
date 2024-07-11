@@ -13,6 +13,7 @@ export default {
         'custom-gradient': 'linear-gradient(to bottom, #2c67f2 , #62cff4)'
       },
       colors: {
+        darkgray: '#212529',
         darkblue: '#000814',
         navyblue: '#001d3d',
         regblue: '#003566',
