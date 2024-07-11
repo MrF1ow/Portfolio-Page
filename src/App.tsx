@@ -35,11 +35,11 @@ function App(): JSX.Element {
   };
 
   return (
-    <div className="w-screen h-screen gap-20 text-slate-50 font-league py-8 px-4 xl:max-w-screen-xl lg:max-w-screen-lg">
-      <Cube />
+    <div className="w-screen h-screen gap-20 text-slate-50 font-league py-28 px-4 xl:max-w-screen-xl lg:max-w-screen-lg">
+      {/* <Cube /> */}
       {/* <HeaderSection scrollToSection={scrollToSection} sectionRefs={sectionRefs}/>
-      <HomeSection sectionRef={homeRef}/>
-      <AboutSection sectionRef={aboutRef}/> */}
+      <HomeSection sectionRef={homeRef}/> */}
+      <AboutSection sectionRef={aboutRef}/>
     </div>
   );
 }

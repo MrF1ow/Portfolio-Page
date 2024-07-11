@@ -1,3 +1,5 @@
+import { Line } from "@react-three/drei";
+
 interface HamburgerIconProps {
   toggleMenu: () => void;
 }
@@ -30,4 +32,14 @@ interface AnimationValues {
   xTranslation: MotionValue<number>;
   totalWidth: React.MutableRefObject<number>;
   direction: React.MutableRefObject<"left" | "right">;
+}
+
+interface LinePercentProps {
+  percent: number;
+  color?: string;
+}
+
+interface ExSlotProps {
+  title: string;
+  years: string;
 }
