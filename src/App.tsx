@@ -4,6 +4,11 @@ import HeaderSection from "./sections/header-section";
 import HomeSection from "./sections/home-section";
 import AboutSection from "./sections/about-section";
 import Cube from "./sections/cube";
+import SceneCanvas from "./components/scene-canvas";
+
+import { EffectComposer, Bloom } from "@react-three/postprocessing";
+import Box from ".//components/box";
+import { Sky, Stars } from "@react-three/drei";
 
 /*
   App component
@@ -35,7 +40,7 @@ function App(): JSX.Element {
   };
 
   return (
-    <div className="w-screen h-screen gap-20 text-slate-50 font-league py-28 px-4 xl:max-w-screen-xl lg:max-w-screen-lg">
+    <div className="w-screen h-screen gap-20 text-slate-50 font-league py-16 px-4 xl:max-w-screen-xl lg:max-w-screen-lg">
       {/* <Cube /> */}
       {/* <HeaderSection scrollToSection={scrollToSection} sectionRefs={sectionRefs}/>
       <HomeSection sectionRef={homeRef}/> */}

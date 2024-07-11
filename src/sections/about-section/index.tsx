@@ -14,7 +14,7 @@ function AboutSection({ sectionRef }: SectionProps): JSX.Element {
     <div ref={sectionRef} className="flex flex-row w-full h-full">
       <div className="w-1/2">
       <SectionTitle title="About" />
-      <Description text="I am a full-stack developer with a passion for creating web applications. I have experience with JavaScript, TypeScript, React, Node.js, Express, and MongoDB. I am always looking to learn new technologies and improve my skills." />
+      <Description text="Lorem dafsdf asdf asdf asdf asdf asdf asdf asdfnwef uiewrgiuwebgksjkdgbn ieruj gsniugj nsriulgj nrliugjnslifdugj nsleriuj hgqepruilgj hsndlifjkgneurlijg nslieujkgnliurgjkn lrieujgksndfliujnerliujg knslidugjknwelri u jgknlifjkgnlierujkgn liujgknwleiurjkgn wlireg" />
       <SubSectionTitle title="Languages" />
       <ExperiencePanel />
       </div>
