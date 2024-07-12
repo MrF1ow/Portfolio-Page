@@ -1,19 +1,16 @@
-import ExperienceSlot from "../../../components/experience-slot";
-import { langauegeExperience } from "../../../data/experience";
+import Experience from "./experience";
+import SubSectionTitle from "../../../components/sub-section-title";
+import { ExperiencePanelProps } from "../../../types";
 
-function ExperiencePanel({}): JSX.Element {
+function ExperiencePanel({
+  title,
+  data,
+}: { title: string } & ExperiencePanelProps): JSX.Element {
   return (
-    <div className="py-6 flex flex-col gap-3">
-      {langauegeExperience.map((experience, index) => (
-        <ExperienceSlot
-          key={index}
-          title={experience.title}
-          percent={experience.percent}
-          years={experience.years}
-          color={experience.color}
-        />
-      ))}
-    </div>
+    <>
+      <SubSectionTitle title={title} />
+      <Experience data={data} />
+    </>
   );
 }
 

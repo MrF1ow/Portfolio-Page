@@ -10,7 +10,7 @@ export default {
         base: '16px',
       },
       backgroundImage:{
-        'custom-gradient': 'linear-gradient(to bottom, #2c67f2 , #62cff4)'
+        'custom-gradient': 'linear-gradient(to right, #2c67f2 , #62cff4)'
       },
       colors: {
         darkgray: '#212529',

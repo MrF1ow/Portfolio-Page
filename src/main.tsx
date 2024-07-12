@@ -1,12 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
 import "./index.css";
 import HomeSection from "./sections/home-section";
 import AboutSection from "./sections/about-section";
 import ProjectSection from "./sections/project-section";
 import ContactSection from "./sections/contact-section";
+import ExperiencePanel from "./sections/about-section/components/experience-panel";
+import {
+  languageExperience,
+  frameworkExperience,
+  toolsExperience,
+} from "./data/experience";
 import Root from "./Root";
 
 const BrowserRouter = createBrowserRouter([
@@ -20,16 +25,26 @@ const BrowserRouter = createBrowserRouter([
         element: <AboutSection />,
         children: [
           {
+            index: true,
+            element: (
+              <ExperiencePanel title="Languages" data={languageExperience} />
+            ),
+          },
+          {
             path: "languages",
-            element: <div>Languages</div>,
+            element: (
+              <ExperiencePanel title="Languages" data={languageExperience} />
+            ),
           },
           {
             path: "frameworks",
-            element: <div>Frameworks</div>,
+            element: (
+              <ExperiencePanel title="Frameworks" data={frameworkExperience} />
+            ),
           },
           {
             path: "tools",
-            element: <div>Tools</div>,
+            element: <ExperiencePanel title="Tools" data={toolsExperience} />,
           },
         ],
       },

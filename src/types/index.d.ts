@@ -32,3 +32,14 @@ interface ExSlotProps {
 interface NavProps {
   activeNav: string;
 }
+
+type ExperienceData = {
+  title: string;
+  years: number;
+  color: string;
+  percent: number;
+}
+
+interface ExperiencePanelProps {
+  data: ExperienceData[];
+}

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import NavigationSection from "./sections/navigation-section";
 
 function Root(props: any): JSX.Element {
