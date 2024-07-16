@@ -9,9 +9,9 @@ function ExperienceSlot({
   const yearText = years === 1 ? "year" : "years";
   return (
     <div>
-      <p className="flex text-2xl text-white items-center gap-2">
+      <p className="flex text-xl md:text-2xl text-white items-center gap-2">
         {title}
-        <span className="text-xl font-normal text-gray-400">
+        <span className="text-lg md:text-xl font-normal text-gray-400">
           {" "}
           - {years} {yearText}
         </span>

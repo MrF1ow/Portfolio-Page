@@ -31,6 +31,7 @@ interface ExSlotProps {
 
 interface NavProps {
   activeNav: string;
+  isMobile: boolean;
 }
 
 type ExperienceData = {

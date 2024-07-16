@@ -13,7 +13,7 @@ const letterVariants = {
  */
 function SectionTitle({ title, delay }: { title: string, delay: number }): JSX.Element {
   return (
-    <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl text-white pb-8">
+    <h1 className="text-4xl font-bold md:text-5xl lg:text-5xl xl:text-6xl text-white lg:pb-8 md:pb-6 pb-4">
       {title.split("").map((letter, index) => (
         <motion.span
           key={index}

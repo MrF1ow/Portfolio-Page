@@ -14,8 +14,8 @@ function Icon({ icon, isActive, title, size }: IconProps): JSX.Element {
   const IconComponent = icon;
 
   const activeClass = isActive
-    ? `text-regyellow text-${size} transition duration-300 ease-in-out`
-    : `text-slate-50 text-${size} hover:text-regyellow transition duration-300 ease-in-out`;
+    ? `text-regyellow ${size} transition duration-300 ease-in-out`
+    : `text-slate-50 ${size} hover:text-regyellow transition duration-300 ease-in-out`;
 
   return (
     <div

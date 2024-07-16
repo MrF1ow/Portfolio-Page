@@ -10,13 +10,13 @@ interface NavOptionsProps {
 
 function NavOptions({ activeNav }: NavOptionsProps): JSX.Element {
   return (
-    <div className="flex flex-col w-full gap-8 items-center">
+    <div className="flex flex-col w-full gap-y-14 xl:gap-8 items-center">
       <NavLink to="/">
         <Icon
           icon={GoHomeFill}
           isActive={activeNav === "home"}
           title="home"
-          size="3xl"
+          size="text-4xl xl:text-3xl"
         />
       </NavLink>
       <NavLink to="/about">
@@ -24,7 +24,7 @@ function NavOptions({ activeNav }: NavOptionsProps): JSX.Element {
           icon={FaUser}
           isActive={activeNav === "about"}
           title="about"
-          size="3xl"
+          size="text-4xl xl:text-3xl"
         />
       </NavLink>
       <NavLink to="/projects">
@@ -32,7 +32,7 @@ function NavOptions({ activeNav }: NavOptionsProps): JSX.Element {
           icon={FaFolderOpen}
           isActive={activeNav === "projects"}
           title="projects"
-          size="3xl"
+          size="text-4xl xl:text-3xl"
         />
       </NavLink>
       <NavLink to="/contact">
@@ -40,7 +40,7 @@ function NavOptions({ activeNav }: NavOptionsProps): JSX.Element {
           icon={MdEmail}
           isActive={activeNav === "contact"}
           title="contact"
-          size="3xl"
+          size="text-4xl xl:text-3xl"
         />
       </NavLink>
     </div>

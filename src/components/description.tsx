@@ -10,7 +10,7 @@ function Description({ text }: { text: string }): JSX.Element {
   const words = text.split(" ");
 
   return (
-    <div className="text-xl w-11/12 h-auto mb-8">
+    <div className="text-lg md:text-xl w-11/12 h-auto mb-8">
       {words.map((word, index) => (
         <span key={index}>
           {word.split("").map((char, charIndex) => (

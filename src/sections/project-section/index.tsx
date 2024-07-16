@@ -25,7 +25,7 @@ function ProjectSection(): JSX.Element {
   };
 
   return (
-    <>
+    <div className="flex flex-col">
       <SectionTitle title="Portfolio" delay={0.15} />
       <div className="flex flex-col w-full">
         <motion.div
@@ -49,7 +49,7 @@ function ProjectSection(): JSX.Element {
           ))}
         </motion.div>
       </div>
-    </>
+    </div>
   );
 }
 

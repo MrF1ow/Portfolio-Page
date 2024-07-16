@@ -23,7 +23,7 @@ function ContactSection(): JSX.Element {
       });
   };
   return (
-    <>
+    <div className="flex flex-col">
       <SectionTitle title="Contact Me" delay={0.15} />
       <div className="w-full flex flex-row">
         <div className="w-1/2 flex flex-col h-5/6">
@@ -41,7 +41,7 @@ function ContactSection(): JSX.Element {
           <ContactForm />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

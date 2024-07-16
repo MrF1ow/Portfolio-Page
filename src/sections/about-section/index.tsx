@@ -6,6 +6,7 @@ import { Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { aboutDescription } from "../../data/section-descriptions";
+import { useOutletContext } from "react-router-dom";
 
 /**
  * Content of the About Section
@@ -15,6 +16,7 @@ import { aboutDescription } from "../../data/section-descriptions";
 function AboutSection(): JSX.Element {
   const [activeItem, setActiveItem] = useState<string>("languages");
   const location = useLocation();
+  const [isMobile] = useOutletContext();
 
   useEffect(() => {
     if (location.pathname === "/about" || location.pathname === "/about/") {
@@ -26,10 +28,10 @@ function AboutSection(): JSX.Element {
   }, [location]);
 
   return (
-    <>
-      <SectionTitle title="About" delay={0.15}/>
-      <div className="flex flex-row w-full h-full">
-        <div className="w-1/2">
+    <div className="flex flex-col">
+      <SectionTitle title="About" delay={0.15} />
+      <div className="flex flex-col lg:flex-row">
+        <div className="w-full lg:w-1/2 pb-6 lg:pb-0">
           <Description text={aboutDescription} />
           <Outlet />
           <div className="flex flex-col gap-4 items-start">
@@ -53,11 +55,13 @@ function AboutSection(): JSX.Element {
             )}
           </div>
         </div>
-        <div className="w-1/2">
-          <CubeCanvas />
-        </div>
+        {!isMobile && (
+          <div className="w-1/2">
+            <CubeCanvas />
+          </div>
+        )}
       </div>
-    </>
+    </div>
   );
 }
 
