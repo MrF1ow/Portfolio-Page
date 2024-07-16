@@ -25,31 +25,31 @@ function ProjectSection(): JSX.Element {
   };
 
   return (
-    <div className="flex flex-col w-full h-full">
-      <div className="mb-8">
-        <SectionTitle title="Portfolio" />
+    <>
+      <SectionTitle title="Portfolio" />
+      <div className="flex flex-col w-full">
+        <motion.div
+          className="flex flex-row flex-wrap gap-4"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          {projectInformation.map((project, index) => (
+            <motion.div key={index} variants={cardVariants}>
+              <ProjectCard
+                key={index}
+                backgroundSrc={project.image}
+                title={project.title}
+                description={project.description}
+                comprises={project.comprisedOf}
+                size={project.size}
+                src={project.src}
+              />
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
-      <motion.div
-        className="flex flex-row flex-wrap gap-x-4 h-full"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        {projectInformation.map((project, index) => (
-          <motion.div key={index} variants={cardVariants}>
-            <ProjectCard
-              key={index}
-              backgroundSrc={project.image}
-              title={project.title}
-              description={project.description}
-              comprises={project.comprisedOf}
-              size={project.size}
-              src={project.src}
-            />
-          </motion.div>
-        ))}
-      </motion.div>
-    </div>
+    </>
   );
 }
 

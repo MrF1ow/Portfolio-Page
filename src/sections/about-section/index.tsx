@@ -26,36 +26,38 @@ function AboutSection(): JSX.Element {
   }, [location]);
 
   return (
-    <div className="flex flex-row w-full h-full">
-      <div className="w-1/2">
-        <SectionTitle title="About" />
-        <Description text={aboutDescription} />
-        <Outlet />
-        <div className="flex flex-col gap-4 items-start">
-          {activeItem === "languages" && (
-            <>
-              <Button title="Frameworks" path="/about/frameworks" />
-              <Button title="Tools" path="/about/tools" />
-            </>
-          )}
-          {activeItem === "frameworks" && (
-            <>
-              <Button title="Tools" path="/about/tools" />
-              <Button title="Languages" path="/about/languages" />
-            </>
-          )}
-          {activeItem === "tools" && (
-            <>
-              <Button title="Languages" path="/about/languages" />
-              <Button title="Frameworks" path="/about/frameworks" />
-            </>
-          )}
+    <>
+      <SectionTitle title="About" />
+      <div className="flex flex-row w-full h-full">
+        <div className="w-1/2">
+          <Description text={aboutDescription} />
+          <Outlet />
+          <div className="flex flex-col gap-4 items-start">
+            {activeItem === "languages" && (
+              <>
+                <Button title="Frameworks" path="/about/frameworks" />
+                <Button title="Tools" path="/about/tools" />
+              </>
+            )}
+            {activeItem === "frameworks" && (
+              <>
+                <Button title="Tools" path="/about/tools" />
+                <Button title="Languages" path="/about/languages" />
+              </>
+            )}
+            {activeItem === "tools" && (
+              <>
+                <Button title="Languages" path="/about/languages" />
+                <Button title="Frameworks" path="/about/frameworks" />
+              </>
+            )}
+          </div>
+        </div>
+        <div className="w-1/2">
+          <Cube />
         </div>
       </div>
-      <div className="w-1/2">
-        <Cube />
-      </div>
-    </div>
+    </>
   );
 }
 
