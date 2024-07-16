@@ -1,6 +1,7 @@
 import SectionTitle from "../../components/section-title";
 import ProjectCard from "./components/project-card";
 import { projectInformation } from "../../data/projects";
+import { motion } from "framer-motion";
 
 /**
  * Content of the Project Section
@@ -8,24 +9,46 @@ import { projectInformation } from "../../data/projects";
  * @returns {JSX.Element}
  */
 function ProjectSection(): JSX.Element {
+  const containerVariants = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="flex flex-col w-full h-full">
       <div className="mb-8">
-        <SectionTitle title="Projects" />
+        <SectionTitle title="Portfolio" />
       </div>
-      <div className="flex flex-row flex-wrap gap-x-4 h-full">
+      <motion.div
+        className="flex flex-row flex-wrap gap-x-4 h-full"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         {projectInformation.map((project, index) => (
-          <ProjectCard
-            key={index}
-            backgroundSrc={project.image}
-            title={project.title}
-            description={project.description}
-            comprises={project.comprisedOf}
-            size={project.size}
-            src={project.src}
-          />
+          <motion.div key={index} variants={cardVariants}>
+            <ProjectCard
+              key={index}
+              backgroundSrc={project.image}
+              title={project.title}
+              description={project.description}
+              comprises={project.comprisedOf}
+              size={project.size}
+              src={project.src}
+            />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

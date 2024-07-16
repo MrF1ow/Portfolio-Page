@@ -5,6 +5,7 @@ import Button from "../../components/button";
 import { Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { aboutDescription } from "../../data/section-descriptions";
 
 /**
  * Content of the About Section
@@ -28,7 +29,7 @@ function AboutSection(): JSX.Element {
     <div className="flex flex-row w-full h-full">
       <div className="w-1/2">
         <SectionTitle title="About" />
-        <Description text="Lorem dafsdf asdf asdf asdf asdf asdf asdf asdfnwef uiewrgiuwebgksjkdgbn ieruj gsniugj nsriulgj nrliugjnslifdugj nsleriuj hgqepruilgj hsndlifjkgneurlijg nslieujkgnliurgjkn lrieujgksndfliujnerliujg knslidugjknwelri u jgknlifjkgnlierujkgn liujgknwleiurjkgn wlireg" />
+        <Description text={aboutDescription} />
         <Outlet />
         <div className="flex flex-col gap-4 items-start">
           {activeItem === "languages" && (

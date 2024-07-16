@@ -1,4 +1,4 @@
-import ExperienceSlot from "../../../components/experience-slot";
+import ExperienceSlot from "./experience-slot";
 import { ExperiencePanelProps } from "../../../types";
 
 function Experience({ data }: ExperiencePanelProps): JSX.Element {

@@ -1,4 +1,4 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 function LinePercent({ percent, color }: LinePercentProps): JSX.Element {
   const style = {
@@ -8,7 +8,14 @@ function LinePercent({ percent, color }: LinePercentProps): JSX.Element {
     borderRadius: "3px",
   };
 
-  return <div style={style}></div>;
+  return (
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: `${percent}%` }}
+      transition={{ duration: 1 }}
+      style={style}
+    ></motion.div>
+  );
 }
 
 export default LinePercent;
