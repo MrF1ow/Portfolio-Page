@@ -11,7 +11,7 @@ const letterVariants = {
  * @param {string} title - Title of the section
  * @returns {JSX.Element}
  */
-function SectionTitle({ title }: { title: string }): JSX.Element {
+function SectionTitle({ title, delay }: { title: string, delay: number }): JSX.Element {
   return (
     <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl text-white pb-8">
       {title.split("").map((letter, index) => (
@@ -20,7 +20,7 @@ function SectionTitle({ title }: { title: string }): JSX.Element {
           initial="hidden"
           animate="visible"
           variants={letterVariants}
-          transition={{ duration: 1, delay: index * 0.15 }}
+          transition={{ duration: 1, delay: index * delay }}
         >
           {letter}
         </motion.span>

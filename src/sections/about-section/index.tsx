@@ -1,6 +1,6 @@
 import SectionTitle from "../../components/section-title";
 import Description from "../../components/description";
-import Cube from "../../components/cube";
+import CubeCanvas from "../../components/cube-canvas";
 import Button from "../../components/button";
 import { Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -27,7 +27,7 @@ function AboutSection(): JSX.Element {
 
   return (
     <>
-      <SectionTitle title="About" />
+      <SectionTitle title="About" delay={0.15}/>
       <div className="flex flex-row w-full h-full">
         <div className="w-1/2">
           <Description text={aboutDescription} />
@@ -54,7 +54,7 @@ function AboutSection(): JSX.Element {
           </div>
         </div>
         <div className="w-1/2">
-          <Cube />
+          <CubeCanvas />
         </div>
       </div>
     </>

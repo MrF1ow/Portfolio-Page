@@ -6,7 +6,7 @@ import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import Box from "./box";
 
 
-function Cube(): JSX.Element {
+function CubeCanvas(): JSX.Element {
   return (
     <Canvas>
       <ambientLight intensity={Math.PI / 2} />
@@ -31,4 +31,4 @@ function Cube(): JSX.Element {
   );
 }
 
-export default Cube;
+export default CubeCanvas;

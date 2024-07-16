@@ -24,7 +24,7 @@ function ContactSection(): JSX.Element {
   };
   return (
     <>
-      <SectionTitle title="Contact Me" />
+      <SectionTitle title="Contact Me" delay={0.15} />
       <div className="w-full flex flex-row">
         <div className="w-1/2 flex flex-col h-5/6">
           <Description text={contactDescription} />
