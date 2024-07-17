@@ -57,7 +57,7 @@ function AboutSection(): JSX.Element {
         </div>
         {!isMobile && (
           <div className="w-1/2">
-            <CubeCanvas />
+            <CubeCanvas activeItem={activeItem} />
           </div>
         )}
       </div>

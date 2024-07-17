@@ -1,32 +1,35 @@
-import { useRef, useState } from "react";
-import * as THREE from "three";
+import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { AsciiRenderer } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import Box from "./box";
 
+import { languageLogos, frameworkLogos, toolLogos } from "../data/experience";
 
-function CubeCanvas(): JSX.Element {
+function CubeCanvas({ activeItem }: { activeItem: string }): JSX.Element {
+  const [photos, setPhotos] = useState(languageLogos);
+
+  useEffect(() => {
+    if (activeItem === "languages") {
+      setPhotos(languageLogos);
+    } else if (activeItem === "frameworks") {
+      setPhotos(frameworkLogos);
+    } else if (activeItem === "tools") {
+      setPhotos(toolLogos);
+    }
+  }, [activeItem]);
+
   return (
     <Canvas>
       <ambientLight intensity={Math.PI / 2} />
-      <spotLight
-        position={[10, 10, 10]}
-        angle={0.15}
-        penumbra={1}
-        decay={0}
-        intensity={1}
-      />
-      <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
-      <Box position={[0, 0, 0]} />
-      {/* <EffectComposer>
+      <Box photos={photos} position={[0, 0.5, 0]} rotation={[0, 0, 0]} />
+      <EffectComposer>
         <Bloom
+          intensity={0.5}
           luminanceThreshold={0.3}
-          luminanceSmoothing={0.75}
+          luminanceSmoothing={0.5}
           height={300}
         />
-      </EffectComposer> */}
-
+      </EffectComposer>
     </Canvas>
   );
 }

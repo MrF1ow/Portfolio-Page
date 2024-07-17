@@ -14,7 +14,7 @@ function Root(props: any): JSX.Element {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 912);
+      setIsMobile(window.innerWidth <= 976);
     };
 
     window.addEventListener("resize", handleResize);

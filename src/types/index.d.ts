@@ -44,3 +44,8 @@ type ExperienceData = {
 interface ExperiencePanelProps {
   data: ExperienceData[];
 }
+
+interface BoxProps {
+  position: [number, number, number];
+  rotation: [number, number, number];
+}
