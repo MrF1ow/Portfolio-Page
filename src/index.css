@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+* {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body {
     @apply flex justify-center bg-custom-gradient;
 }
