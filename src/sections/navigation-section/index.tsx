@@ -1,11 +1,28 @@
+/* Package Imports */
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
+
+/* Local Imports */
 import NavOptions from "./components/nav-options";
 import SocialOptions from "./components/social-options";
 import Logo from "./components/logo";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
 import MobileMenu from "./components/mobile-menu";
 
-function NavigationSection({ activeNav, isMobile }: NavProps): JSX.Element {
+/*
+ * NavigationSection Component
+ *
+ * This component is used to manage the navigation section (nav bar).
+ *
+ * @param {string} activeNav - The active navigation option.
+ * @param {boolean} isMobile - The boolean to check if the device is mobile.
+ *
+ * @returns {JSX.Element} - The NavigationSection component.
+ *
+ */
+function NavigationSection({
+  activeNav,
+  isMobile,
+}: NavSectionProps): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {

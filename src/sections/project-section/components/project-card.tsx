@@ -5,7 +5,9 @@ import ProjectButton from "./project-button";
 import ProjectComposition from "./project-composition";
 
 /*
- * This component is used to display a project card.
+ * DeluxeProjectCard Component
+ *
+ * Card that displays a project's information when not mobile.
  *
  * @param {string} backgroundSrc - The background image of the card
  * @param {string} title - The title of the project
@@ -13,6 +15,7 @@ import ProjectComposition from "./project-composition";
  * @param {string[]} comprises - The technologies used in the project
  * @param {string} [size] - The size of the card
  * @param {string} src - The link to the project
+ *
  * @returns {JSX.Element}
  */
 export function DeluxeProjectCard({
@@ -22,14 +25,8 @@ export function DeluxeProjectCard({
   comprises,
   size,
   src,
-}: {
-  backgroundSrc: string;
-  title: string;
-  description: string;
-  comprises: string[];
-  size?: string;
-  src: string;
-}): JSX.Element {
+}: DeluxeProjectCardProps): JSX.Element {
+  // Determine the size of the card
   let sizeClass;
   if (size === "small") {
     sizeClass = "w-[250px]";
@@ -38,6 +35,7 @@ export function DeluxeProjectCard({
   } else if (size === "large") {
     sizeClass = "w-[400px]";
   }
+
   const cardClass = `relative flex flex-col h-[300px] ${sizeClass} bg-cover bg-center rounded-xl overflow-hidden shadow-lg`;
   const textContainerClass =
     "absolute inset-0 flex flex-col w-full justify-end bg-black bg-opacity-60 p-4";
@@ -82,15 +80,22 @@ export function DeluxeProjectCard({
   );
 }
 
+/*
+ * RegularProjectCard Component
+ *
+ * Card that displays a project's information when mobile.
+ *
+ * @param {string} backgroundSrc - The background image of the card
+ * @param {string} title - The title of the project
+ * @param {string} src - The link to the project
+ *
+ * @returns {JSX.Element}
+ * */
 export function RegularProjectCard({
   backgroundSrc,
   title,
   src,
-}: {
-  backgroundSrc: string;
-  title: string;
-  src: string;
-}): JSX.Element {
+}: RegularProjectCardProps): JSX.Element {
   return (
     <div
       className="relative h-[100px] w-full bg-cover bg-center rounded-xl overflow-hidden shadow-lg"

@@ -7,15 +7,7 @@
  *
  * @returns {JSX.Element}
  * */
-function FormSection({
-  descriptor,
-  type,
-  width,
-}: {
-  descriptor: string;
-  type: string;
-  width: string;
-}): JSX.Element {
+function FormSection({ descriptor, type, width }: FormProps): JSX.Element {
   function capitalizeFirstLetter(string: string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }

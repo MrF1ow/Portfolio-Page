@@ -1,5 +1,14 @@
+/* Package Imports */
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+/*
+ * SocialOptions Component
+ *
+ * This component is used to manage the social options.
+ *
+ * @returns {JSX.Element} - The SocialOptions component.
+ *
+ */
 function SocialOptions(): JSX.Element {
   const iconStyles =
     "text-slate-50 text-3xl xl:text-2xl hover:text-regyellow transition duration-300 ease-in-out";

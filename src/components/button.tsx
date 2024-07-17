@@ -1,6 +1,18 @@
+/* Package Imports */
 import { NavLink } from "react-router-dom";
 
-function Button({ title, path }: { title: string; path: string }): JSX.Element {
+/*
+ * Button Component
+ *
+ * This component is used to manage the button.
+ *
+ * @param {string} title - The title of the button.
+ * @param {string} path - The path of the button.
+ *
+ * @returns {JSX.Element} - The Button component.
+ *
+ */
+function Button({ title, path }: StringObject & StringObject): JSX.Element {
   return (
     <NavLink
       to={path}

@@ -1,51 +1,91 @@
 import { Line } from "@react-three/drei";
+import { Texture } from "three";
+import { IconType } from "react-icons";
 
-interface HamburgerIconProps {
-  toggleMenu: () => void;
+/*
+ * StringObject Interface
+ *
+ * General interface for objects with string keys and string values.
+ * */
+interface StringObject {
+  [key: string]: string;
+}
+interface GeneralBoxProps {
+  position: [number, number, number];
+  rotation: [number, number, number];
+}
+interface FullBoxProps extends GeneralBoxProps {
+  photos: string[];
+}
+interface BoxSideProps extends GeneralBoxProps {
+  texture: Texture;
 }
 
-interface ImageProperties {
-  src: string;
-  alt: string;
+interface CubeCanvasProps {
+  activeItem: string;
 }
 
-type AnimatedTextProps = {
-  text: string;
-};
-
-interface AnimationValues {
-  xTranslation: MotionValue<number>;
-  totalWidth: React.MutableRefObject<number>;
-  direction: React.MutableRefObject<"left" | "right">;
-}
-
-interface LinePercentProps {
-  percent: number;
-  color?: string;
-}
-
-interface ExSlotProps {
+interface SectionTitleProps {
   title: string;
-  years: string;
+  delay: number;
+  color: string;
 }
 
-interface NavProps {
-  activeNav: string;
-  isMobile: boolean;
+interface LineProps {
+  percent: number;
+  color: string;
 }
 
-type ExperienceData = {
+interface PartExperienceData {
   title: string;
   years: number;
-  color: string;
-  percent: number;
 }
 
+type ExperienceData = PartExperienceData & LineProps;
+
+interface ExperienceProps {
+  data: ExperienceData[];
+}
 interface ExperiencePanelProps {
+  title: string;
   data: ExperienceData[];
 }
 
-interface BoxProps {
-  position: [number, number, number];
-  rotation: [number, number, number];
+interface FormProps {
+  descriptor: string;
+  type: string;
+  width: string;
+}
+
+interface OutletProps {
+  isMobile: boolean;
+}
+
+interface NavOptionsProps {
+  activeNav: string;
+}
+
+type NavSectionProps = NavOptionsProps & OutletProps;
+
+interface NavIconProps {
+  icon: IconType;
+  isActive?: boolean;
+  title?: string;
+  size: string;
+}
+
+interface RegularProjectCardProps {
+  backgroundSrc: string;
+  title: string;
+  src: string;
+}
+
+type ProjectComposition = {
+  comprises: string[];
+};
+
+interface DeluxeProjectCardProps extends RegularProjectCardProps {
+  description: string;
+  comprises: string[];
+  size?: string;
 }

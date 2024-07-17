@@ -1,13 +1,22 @@
+/* Package Imports */
 import { GoHomeFill } from "react-icons/go";
 import { FaUser, FaFolderOpen } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { NavLink } from "react-router-dom";
+
+/* Local Imports */
 import Icon from "./icon";
 
-interface NavOptionsProps {
-  activeNav: string;
-}
-
+/*
+ * NavOptions Component
+ *
+ * This component is used to manage the navigation options.
+ *
+ * @param {string} activeNav - The active navigation option.
+ *
+ * @returns {JSX.Element} - The NavOptions component.
+ *
+ */
 function NavOptions({ activeNav }: NavOptionsProps): JSX.Element {
   return (
     <div className="flex flex-col w-full gap-y-14 xl:gap-8 items-center">

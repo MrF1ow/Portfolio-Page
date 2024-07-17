@@ -1,13 +1,27 @@
+/* Package Imports */
 import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
-import Box from "./box";
 
+/* Local Imports */
+import Box from "./box";
 import { languageLogos, frameworkLogos, toolLogos } from "../data/experience";
 
-function CubeCanvas({ activeItem }: { activeItem: string }): JSX.Element {
+/*
+ * CubeCanvas Component
+ *
+ * This component is used to manage the cube canvas.
+ *
+ * @param {string} activeItem - The active items to be displayed on the cube.
+ *
+ * @returns {JSX.Element} - The CubeCanvas component.
+ *
+ */
+function CubeCanvas({ activeItem }: StringObject ): JSX.Element {
+  // State to manage the photos to be displayed on the cube
   const [photos, setPhotos] = useState(languageLogos);
 
+  // Update the photos based on the active item
   useEffect(() => {
     if (activeItem === "languages") {
       setPhotos(languageLogos);

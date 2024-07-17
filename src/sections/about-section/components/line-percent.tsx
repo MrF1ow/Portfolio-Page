@@ -1,6 +1,20 @@
+/* Package Import */
 import { motion } from "framer-motion";
 
-function LinePercent({ percent, color }: LinePercentProps): JSX.Element {
+/*
+ * LinePercent Component
+ *
+ * This component is used to manage the line for experience percent.
+ *
+ * @param {number} percent - The percentage of experience.
+ * @param {string} color - The color of the experience slot.
+ *
+ * @returns {JSX.Element} - The LinePercent component.
+ *
+ * */
+function LinePercent({ percent, color }: LineProps): JSX.Element {
+
+  // Set the style for the line.
   const style = {
     width: `${percent}%`,
     height: "20px",

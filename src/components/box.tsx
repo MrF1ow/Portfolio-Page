@@ -1,19 +1,36 @@
-import { useRef, useState, useEffect } from "react";
+/* Package Imports */
 import * as THREE from "three";
-import BoxSide from "./box-side";
+import { useRef, useState, useEffect } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { Edges } from "@react-three/drei";
-import { BoxProps } from "../types";
 
-function Box({
-  photos,
-  ...props
-}: BoxProps & { photos: string[] }): JSX.Element {
+/* Local Imports */
+import BoxSide from "./box-side";
+
+/*
+ * Box Component
+ *
+ * This component is used to manage the box.
+ *
+ * @param {BoxProps} photos - The photos to be displayed on the box.
+ *
+ * @returns {JSX.Element} - The Box component.
+ *
+ */
+function Box({ photos, position, rotation }: FullBoxProps): JSX.Element {
+  // Reference to the mesh
   const meshRef = useRef<THREE.Mesh>(null!);
+
+  // State to manage the scale of the box
   const [scale, setScale] = useState<number>(1);
 
-  const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
+  // State to record the window size
+  const [windowSize, setWindowSize] = useState([
+    window.innerWidth,
+    window.innerHeight,
+  ]);
 
+  // Event listener to update the window size
   useEffect(() => {
     const handleResize = () => {
       setWindowSize([window.innerWidth, window.innerHeight]);
@@ -23,6 +40,7 @@ function Box({
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Update the scale of the box based on the window size
   useEffect(() => {
     if (windowSize[0] <= 976) {
       setScale(0.5);
@@ -33,6 +51,7 @@ function Box({
     }
   }, [windowSize]);
 
+  // Load the photos to usable textures
   const logo1 = useLoader(THREE.TextureLoader, photos[0]);
   const logo2 = useLoader(THREE.TextureLoader, photos[1]);
   const logo3 = useLoader(THREE.TextureLoader, photos[2]);
@@ -40,6 +59,7 @@ function Box({
   const logo5 = useLoader(THREE.TextureLoader, photos[4]);
   const logo6 = useLoader(THREE.TextureLoader, photos[5]);
 
+  // Animate the rotation of the box
   useFrame(() => {
     meshRef.current.rotation.x += 0.004;
     meshRef.current.rotation.y += 0.004;
@@ -47,45 +67,45 @@ function Box({
 
   return (
     <>
-      <mesh {...props} ref={meshRef} scale={scale}>
+      <mesh position={position} rotation={rotation} ref={meshRef} scale={scale}>
         <boxGeometry args={[3, 3, 3]} />
         <meshStandardMaterial transparent opacity={0.5} />
         <Edges threshold={20} color="white" />
 
         {/* Left */}
         <BoxSide
-          logo={logo1}
+          texture={logo1}
           rotation={[0, -Math.PI / 2, 0]}
           position={[-1.5, 0, 0]}
         />
 
         {/* Front */}
-        <BoxSide logo={logo2} rotation={[0, 0, 0]} position={[0, 0, 1.5]} />
+        <BoxSide texture={logo2} rotation={[0, 0, 0]} position={[0, 0, 1.5]} />
 
         {/* Back */}
         <BoxSide
-          logo={logo3}
+          texture={logo3}
           rotation={[0, -Math.PI, 0]}
           position={[0, 0, -1.5]}
         />
 
         {/* Top */}
         <BoxSide
-          logo={logo4}
+          texture={logo4}
           rotation={[-Math.PI / 2, 0, 0]}
           position={[0, 1.5, 0]}
         />
 
         {/* Bottom */}
         <BoxSide
-          logo={logo5}
+          texture={logo5}
           rotation={[Math.PI / 2, 0, 0]}
           position={[0, -1.5, 0]}
         />
 
         {/* Right */}
         <BoxSide
-          logo={logo6}
+          texture={logo6}
           rotation={[0, Math.PI / 2, 0]}
           position={[1.5, 0, 0]}
         />

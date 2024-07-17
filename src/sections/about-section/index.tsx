@@ -1,17 +1,24 @@
+/* Package Imports */
+import { Outlet } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useOutletContext } from "react-router-dom";
+
+/* Local Imports */
+import { aboutDescription } from "../../data/section-descriptions";
 import SectionTitle from "../../components/section-title";
 import Description from "../../components/description";
 import CubeCanvas from "../../components/cube-canvas";
 import Button from "../../components/button";
-import { Outlet } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { aboutDescription } from "../../data/section-descriptions";
-import { useOutletContext } from "react-router-dom";
 
 /**
  * Content of the About Section
  *
- * @returns {JSX.Element}
+ * This component is used to manage the content of the about section.
+ * It contains the description of the section and the buttons to navigate
+ * between languages, frameworks and tools.
+ *
+ * @returns {JSX.Element} - The AboutSection component.
  */
 function AboutSection(): JSX.Element {
   const [activeItem, setActiveItem] = useState<string>("languages");

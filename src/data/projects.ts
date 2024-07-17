@@ -3,6 +3,22 @@ import smallShellImg from "../assets/images/project-images/small_shell.png";
 import exerciseTrackerImg from "../assets/images/project-images/exercise_tracker.png";
 import imageEditorImg from "../assets/images/project-images/image_editor.png";
 
+/*
+ * Project Information
+ *
+ * This data is used to display the projects of the user.
+ * Order of the data is important.
+ *
+ * Format:
+ * {
+ *  title: string ( Name of the project ),
+ *  description: string ( Description of the project ),
+ *  comprisedOf: string[] ( Languages/Tools used in the project ),
+ *  src: string ( Source code link of the project ),
+ *  size: string ( Size of the project ),
+ *  image: string ( Image of the project ),
+ * }
+ */
 export const projectInformation = [
   {
     title: "Playlist Partner",

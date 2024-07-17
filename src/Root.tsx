@@ -34,7 +34,7 @@ function Root(props: any): JSX.Element {
       <div className="mb-6 lg:mb-0">
         <NavigationSection activeNav={activeNav} isMobile={isMobile} />
       </div>
-      <div className="h-[92%] w-full md:lg:h-full lg:translate-y-0 lg:w-[90%] xl:w-[96%] lg:translate-x-[10%] xl:translate-x-[4%] translate-x-0">
+      <div className="h-[92%] w-full md:lg:h-full lg:translate-y-0 lg:w-[90%] xl:w-[96%] lg:translate-x-[10%] xl:translate-x-[4%] translate-x-0 py-0 md:py-4 lg:py-0">
         {children || <Outlet context={[isMobile]} />}
       </div>
     </main>

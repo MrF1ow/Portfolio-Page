@@ -1,7 +1,18 @@
+/* Package Imports */
 import { motion } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 
+/*
+ * MobileMenu Component
+ *
+ * This component is used to manage the mobile menu.
+ *
+ * @param {function} toggleMenu - The function to toggle the menu.
+ *
+ * @returns {JSX.Element} - The MobileMenu component.
+ *
+ */
 function MobileMenu({ toggleMenu }: { toggleMenu: () => void }): JSX.Element {
   return (
     <motion.div

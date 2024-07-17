@@ -1,5 +1,8 @@
+/* Package Imports */
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+
+/* Local Imports */
 import FormSection from "./form-section";
 
 /*
@@ -8,8 +11,17 @@ import FormSection from "./form-section";
  * @returns {JSX.Element}
  */
 function ContactForm(): JSX.Element {
+  // Referece to the form element
   const form = useRef<HTMLFormElement>(null);
 
+  /*
+   * This function sends an email to the owner of the website.
+   * It uses the emailjs library to send the email.
+   *
+   * @param {React.FormEvent<HTMLFormElement>} e - The form event.
+   *
+   * @returns {void}
+   */
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 

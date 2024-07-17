@@ -1,3 +1,4 @@
+/* Package Imports */
 import { motion } from "framer-motion";
 
 /*
@@ -6,7 +7,7 @@ import { motion } from "framer-motion";
  * @param {string} text - Description text
  * @returns {JSX.Element}
  */
-function Description({ text }: { text: string }): JSX.Element {
+function Description({ text }: StringObject): JSX.Element {
   const words = text.split(" ");
 
   return (

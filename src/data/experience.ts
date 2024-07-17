@@ -1,3 +1,4 @@
+/* Langauge Logo Imports */
 import PythonLogo from "../assets/language-logos/python.png";
 import CppLogo from "../assets/language-logos/cpp.png";
 import HtmlLogo from "../assets/language-logos/html.png";
@@ -5,6 +6,7 @@ import TypescriptLogo from "../assets/language-logos/typescript.png";
 import CssLogo from "../assets/language-logos/css.png";
 import JsLogo from "../assets/language-logos/javascript.png";
 
+/* Framework Logo Imports */
 import NodeLogo from "../assets/framework-logos/nodejs.png";
 import ExpressLogo from "../assets/framework-logos/expressjs.png";
 import ReactLogo from "../assets/framework-logos/reactjs.png";
@@ -12,6 +14,7 @@ import TailwindLogo from "../assets/framework-logos/tailwind.png";
 import DockerLogo from "../assets/framework-logos/docker.png";
 import FlaskLogo from "../assets/framework-logos/flask.png";
 
+/* Tool Logo Imports */
 import GitLogo from "../assets/tool-logos/git.png";
 import VscodeLogo from "../assets/tool-logos/vscode.png";
 import LinuxLogo from "../assets/tool-logos/linux.png";
@@ -19,6 +22,20 @@ import MongodbLogo from "../assets/tool-logos/mongodb.png";
 import MariadbLogo from "../assets/tool-logos/mariadb.png";
 import AwsLogo from "../assets/tool-logos/aws.png";
 
+/*
+ * Experience Data
+ *
+ * This data is used to display the experience of the user.
+ * Order of the data is important.
+ *
+ * Format:
+ * {
+ *  title: string ( Name of the language/framework/tool ),
+ *  years: number ( Years of experience ),
+ *  color: string ( Color of the progress bar ),
+ *  percent: number ( Percentage of experience ),
+ * }
+ */
 export const languageExperience = [
   {
     title: "JavaScript",

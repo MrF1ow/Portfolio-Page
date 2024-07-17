@@ -1,11 +1,25 @@
+/* Local Imports */
 import LinePercent from "./line-percent";
 
+/*
+ * ExperienceSlot component
+ *
+ * This component is used to manage the experience slot.
+ *
+ * @param {string} title - The title of the experience slot.
+ * @param {number} years - The years of experience.
+ * @param {number} percent - The percentage of experience.
+ * @param {string} color - The color of the experience slot.
+ *
+ * @returns {JSX.Element} - The ExperienceSlot component.
+ *
+ * */
 function ExperienceSlot({
   title,
   years,
   percent,
   color,
-}: ExSlotProps & LinePercentProps): JSX.Element {
+}: ExperienceData ): JSX.Element {
   const yearText = years === 1 ? "year" : "years";
   return (
     <div>

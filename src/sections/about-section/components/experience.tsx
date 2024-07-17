@@ -1,7 +1,18 @@
+/* Local Imports */
+import { ExperienceData } from "../../../types";
 import ExperienceSlot from "./experience-slot";
-import { ExperiencePanelProps } from "../../../types";
 
-function Experience({ data }: ExperiencePanelProps): JSX.Element {
+/*
+ * Experience Component
+ *
+ * This component is used to manage the experience section.
+ *
+ * @param {ExperienceProps} data - The data to be displayed in the experience section.
+ *
+ * @returns {JSX.Element} - The Experience component.
+ *
+ * */
+function Experience({ data }: ExperienceProps): JSX.Element {
   return (
     <div className="py-6 flex flex-col gap-3">
       {data.map((item, index) => (

@@ -1,14 +1,21 @@
-import { IconType } from "react-icons";
+/* Package Imports */
 import { useState } from "react";
 
-interface IconProps {
-  icon: IconType;
-  isActive?: boolean;
-  title?: string;
-  size: string;
-}
 
-function Icon({ icon, isActive, title, size }: IconProps): JSX.Element {
+/*
+ * Icon Component
+ *
+ * This component is used to manage the icon.
+ *
+ * @param {IconProps} icon - The icon to be displayed.
+ * @param {boolean} isActive - The active state of the icon.
+ * @param {string} title - The title of the icon.
+ * @param {string} size - The size of the icon.
+ *
+ * @returns {JSX.Element} - The Icon component.
+ *
+ */
+function Icon({ icon, isActive, title, size }: NavIconProps): JSX.Element {
   const [active, setActive] = useState<boolean>(false);
 
   const IconComponent = icon;
