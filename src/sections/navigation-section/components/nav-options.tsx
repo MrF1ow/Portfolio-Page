@@ -40,7 +40,7 @@ function NavOptions({ activeNav }: NavOptionsProps): JSX.Element {
         <Icon
           icon={FaFolderOpen}
           isActive={activeNav === "projects"}
-          title="projects"
+          title="portfolio"
           size="text-4xl xl:text-3xl"
         />
       </NavLink>

@@ -2,7 +2,7 @@
  * This file contains the descriptions for each section on the website.
  */
 export const aboutDescription =
-  "I am a software engineer with a passion for web development. I have experience in building web applications using React, Next.js, and Tailwind CSS. I am also familiar with TypeScript, Node.js, and MongoDB. I am always eager to learn new technologies and improve my skills.";
+  "I am an ambitious software engineer with a passion for solving problems through digital innovation. My unique skill set allows me to approach challenges analytically, communicate with others effectively, and tackle any problem head-on. I am committed to continuous growth and learning, always seeking opportunities to expand my knowledge and enhance my expertise.";
 
 export const contactDescription =
-  "I'm always open to new opportunities and collaborations. Feel free to reach out to me using this form or by the other means listed.";
+  "I'm always open to new opportunities and collaborations. Feel free to reach out to me using the form or by the other means listed.";
