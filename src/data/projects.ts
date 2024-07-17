@@ -69,7 +69,7 @@ export const projectInformation = [
     description:
       "A portfolio website that showcases my projects and skills.",
     comprisedOf: ["React", "TypeScript", "Tailwind", "Vite", "ThreeJS"],
-    src: "https://ethanflow.dev",
+    src: "https://github.com/MrF1ow/Portfolio_Page2.0",
     size: "medium",
     image: portfolioImg,
   },
