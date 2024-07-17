@@ -22,22 +22,24 @@ function ContactSection(): JSX.Element {
         console.log("Failed to copy email address to clipboard:", err);
       });
   };
+
+  const iconClass = "text-6xl md:text-7xl lg:text-8xl";
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
       <SectionTitle title="Contact Me" delay={0.15} />
-      <div className="w-full flex flex-row">
-        <div className="w-1/2 flex flex-col h-5/6">
+      <div className="w-full flex flex-col lg:flex-row gap-10 md:gap-8 lg:gap-0">
+        <div className="w-full lg:w-1/2 flex flex-col h-5/6">
           <Description text={contactDescription} />
           <div className="flex flex-row justify-evenly">
             <a href="https://www.linkedin.com/in/ethanflow/">
-              <FaLinkedin className="text-8xl" />
+              <FaLinkedin className={iconClass} />
             </a>
             <a onClick={handleEmailClick}>
-              <MdEmail className="text-8xl" />
+              <MdEmail className={iconClass} />
             </a>
           </div>
         </div>
-        <div className="w-1/2 flex items-center h-full">
+        <div className="w-full lg:w-1/2 flex items-center h-full">
           <ContactForm />
         </div>
       </div>

@@ -39,15 +39,23 @@ function ContactForm(): JSX.Element {
   return (
     <div className="w-full">
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-y-4">
-        <div className="flex flex-row justify-between">
-          <FormSection descriptor="name" type="text" width="w-[48%]" />
-          <FormSection descriptor="email" type="email" width="w-[48%]" />
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 lg:justify-between">
+          <FormSection
+            descriptor="name"
+            type="text"
+            width="w-full lg:w-[48%]"
+          />
+          <FormSection
+            descriptor="email"
+            type="email"
+            width="w-full lg:w-[48%]"
+          />
         </div>
         <FormSection descriptor="message" type="message" width="w-full" />
         <button
           type="submit"
           value="send"
-          className="w-[10%] bg-darkgray border border-darkgray py-2 hover:text-darkgray hover:bg-transparent transition-all duration-150 ease-in-out"
+          className="xl:w-[10%] md:w-[50%] w-full text-lg md:text-xl lg:text-2xl bg-darkgray border border-darkgray py-2 hover:text-darkgray hover:bg-transparent transition-all duration-150 ease-in-out"
         >
           Send
         </button>

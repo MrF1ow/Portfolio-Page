@@ -8,7 +8,7 @@ import SectionTitle from "../../components/section-title";
 */
 function HomeSection(): JSX.Element {
   return (
-    <div className="w-full flex flex-col-reverse lg:flex-row gap-y-8 lg:gap-y-0 lg:justify-between justify-end">
+    <div className="w-full h-full flex flex-col-reverse lg:flex-row gap-y-8 lg:gap-y-0 lg:justify-between justify-end items-center">
       <div className="flex flex-col w-full items-center lg:items-start lg:w-1/2">
         <SectionTitle title="Hi" delay={0.05} />
         <SectionTitle title="I'm Ethan Flow," delay={0.05} />
@@ -21,7 +21,7 @@ function HomeSection(): JSX.Element {
           <Button title="Contact Me" path="/contact" />
         </div>
       </div>
-      <div className="w-full lg:w-1/2 flex items-center justify-start">
+      <div className="w-full lg:w-1/2 flex justify-center">
         <img
           src={pfp}
           alt="profile"

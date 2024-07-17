@@ -20,7 +20,7 @@ function FormSection({
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
-  let inputClass = `p-2 bg-darkgray ${width}`;
+  let inputClass = `p-2 bg-darkgray ${width} text-lg md:text-xl lg:text-2xl`;
 
   return (
     <>

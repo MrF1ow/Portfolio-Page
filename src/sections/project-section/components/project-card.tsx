@@ -15,7 +15,7 @@ import ProjectComposition from "./project-composition";
  * @param {string} src - The link to the project
  * @returns {JSX.Element}
  */
-function ProjectCard({
+export function DeluxeProjectCard({
   backgroundSrc,
   title,
   description,
@@ -47,11 +47,12 @@ function ProjectCard({
       className={cardClass}
       style={{ backgroundImage: `url(${backgroundSrc})` }}
     >
-      <motion.div
+      <motion.a
         className={textContainerClass}
         initial="rest"
         whileHover="hover"
         animate="rest"
+        href={src}
       >
         <motion.div
           variants={{
@@ -76,9 +77,31 @@ function ProjectCard({
             <ProjectButton linkSrc={src} />
           </div>
         </motion.div>
-      </motion.div>
+      </motion.a>
     </div>
   );
 }
 
-export default ProjectCard;
+export function RegularProjectCard({
+  backgroundSrc,
+  title,
+  src,
+}: {
+  backgroundSrc: string;
+  title: string;
+  src: string;
+}): JSX.Element {
+  return (
+    <div
+      className="relative h-[100px] w-full bg-cover bg-center rounded-xl overflow-hidden shadow-lg"
+      style={{ backgroundImage: `url(${backgroundSrc})` }}
+    >
+      <a
+        className="absolute inset-0 flex flex-col w-full justify-end bg-black bg-opacity-80 p-4"
+        href={src}
+      >
+        <ProjectTitle title={title} />
+      </a>
+    </div>
+  );
+}

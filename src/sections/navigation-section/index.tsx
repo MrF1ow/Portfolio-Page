@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 function NavigationSection({ activeNav, isMobile }: NavProps): JSX.Element {
   return (
-    <nav className="top-0 left-0 fixed z-10 flex bg-darkgray lg:h-screen lg:w-[6%] xl:w-[4%] h-[10%] lg:px-4 lg:py-2 lg:flex-col w-screen px-2 py-4 flex-row justify-between">
+    <nav className="top-0 left-0 fixed z-10 flex bg-darkgray lg:h-screen lg:w-[6%] xl:w-[4%] h-[10%] md:h-[6%] lg:px-4 lg:py-2 lg:flex-col w-screen px-2 py-4 flex-row justify-between">
       <Logo />
       {!isMobile && (
         <>

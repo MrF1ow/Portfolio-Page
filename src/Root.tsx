@@ -13,7 +13,7 @@ function Root(props: any): JSX.Element {
   }, [location.pathname, setActiveNav]);
 
   useEffect(() => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 912) {
       setIsMobile(true);
     }
   }, []);
@@ -24,7 +24,7 @@ function Root(props: any): JSX.Element {
       <div className="mb-6 lg:mb-0">
         <NavigationSection activeNav={activeNav} isMobile={isMobile} />
       </div>
-      <div className="absolute left-0 top-[14%] flex items-center lg:left-[10%] xl:left-[4%] lg:w-[90%] xl:w-[96%] px-6">
+      <div className="h-[90%] md:lg:h-full lg:translate-y-0 flex lg:w-[90%] xl:w-[96%] px-4 md:px-2 lg:px-0 py-4 lg:translate-x-[10%] xl:translate-x-[4%] translate-x-0">
         {children || <Outlet context={[isMobile]} />}
       </div>
     </main>
