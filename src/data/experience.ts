@@ -66,15 +66,15 @@ export const frameworkExperience = [
     percent: 60,
   },
   {
-    title: "Express.js",
-    years: 2,
-    color: "#000000",
-    percent: 60,
-  },
-  {
     title: "React",
     years: 2,
     color: "#61dafb",
+    percent: 60,
+  },
+  {
+    title: "Express.js",
+    years: 2,
+    color: "#000000",
     percent: 60,
   },
   {
