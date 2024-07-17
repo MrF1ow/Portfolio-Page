@@ -13,9 +13,15 @@ function Root(props: any): JSX.Element {
   }, [location.pathname, setActiveNav]);
 
   useEffect(() => {
-    if (window.innerWidth <= 912) {
-      setIsMobile(true);
-    }
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 912);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const { children } = props;
