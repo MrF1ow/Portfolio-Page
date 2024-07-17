@@ -2,6 +2,7 @@ import playlistPartnerImg from "../assets/images/project-images/playlist_partner
 import smallShellImg from "../assets/images/project-images/small_shell.png";
 import exerciseTrackerImg from "../assets/images/project-images/exercise_tracker.png";
 import imageEditorImg from "../assets/images/project-images/image_editor.png";
+import portfolioImg from "../assets/images/project-images/portfolio.png";
 
 /*
  * Project Information
@@ -62,5 +63,14 @@ export const projectInformation = [
     src: "https://github.com/MrF1ow/Exercise-Tracker",
     size: "medium",
     image: exerciseTrackerImg,
+  },
+  {
+    title: "Portfolio",
+    description:
+      "A portfolio website that showcases my projects and skills.",
+    comprisedOf: ["React", "TypeScript", "Tailwind", "Vite", "ThreeJS"],
+    src: "https://ethanflow.dev",
+    size: "medium",
+    image: portfolioImg,
   },
 ];

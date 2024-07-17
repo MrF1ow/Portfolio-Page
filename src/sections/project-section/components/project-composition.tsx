@@ -11,7 +11,7 @@
 function ProjectComposition({ comprises }: ProjectComposition): JSX.Element {
   return (
     <div className="flex gap-2 w-full flex-wrap">
-      {comprises.map(({item, index}: MapProps) => (
+      {comprises.map((item, index) => (
         <div key={index} className="font-bold text-slate-100">
           {item}
         </div>
