@@ -11,9 +11,10 @@ const letterVariants = {
  * @param {string} title - Title of the section
  * @returns {JSX.Element}
  */
-function SectionTitle({ title, delay }: { title: string, delay: number }): JSX.Element {
+function SectionTitle({ title, delay, color }: { title: string, delay: number, color: string }): JSX.Element {
+  const titleClass = `text-4xl font-bold md:text-5xl lg:text-5xl xl:text-6xl lg:pb-8 md:pb-6 pb-4 ${color}`;
   return (
-    <h1 className="text-4xl font-bold md:text-5xl lg:text-5xl xl:text-6xl text-white lg:pb-8 md:pb-6 pb-4">
+    <h1 className={titleClass}>
       {title.split("").map((letter, index) => (
         <motion.span
           key={index}

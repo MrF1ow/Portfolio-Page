@@ -23,10 +23,10 @@ function ContactSection(): JSX.Element {
       });
   };
 
-  const iconClass = "text-6xl md:text-7xl lg:text-8xl";
+  const iconClass = "text-6xl md:text-7xl lg:text-8xl text-softyellow";
   return (
-    <div className="flex flex-col w-full">
-      <SectionTitle title="Contact Me" delay={0.15} />
+    <div className="flex flex-col w-full h-full">
+      <SectionTitle title="Contact Me" delay={0.15} color="text-softyellow" />
       <div className="w-full flex flex-col lg:flex-row gap-10 md:gap-8 lg:gap-0">
         <div className="w-full lg:w-1/2 flex flex-col h-5/6">
           <Description text={contactDescription} />

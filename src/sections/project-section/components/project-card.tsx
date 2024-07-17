@@ -40,7 +40,7 @@ export function DeluxeProjectCard({
   }
   const cardClass = `relative flex flex-col h-[300px] ${sizeClass} bg-cover bg-center rounded-xl overflow-hidden shadow-lg`;
   const textContainerClass =
-    "absolute inset-0 flex flex-col w-full justify-end bg-black bg-opacity-80 p-4";
+    "absolute inset-0 flex flex-col w-full justify-end bg-black bg-opacity-60 p-4";
 
   return (
     <div

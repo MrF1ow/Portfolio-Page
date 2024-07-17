@@ -13,7 +13,7 @@ import { useOutletContext } from "react-router-dom";
  * @returns {JSX.Element}
  */
 function ProjectSection(): JSX.Element {
-  const [ isMobile ] = useOutletContext();
+  const [isMobile]: [boolean] = useOutletContext();
 
   const containerVariants = {
     hidden: { opacity: 1 },
@@ -31,12 +31,12 @@ function ProjectSection(): JSX.Element {
   };
 
   return (
-    <div className="flex flex-col w-full">
-      <SectionTitle title="Portfolio" delay={0.15} />
-      <div className="flex flex-col w-full">
+    <div className="flex flex-col h-full w-full">
+      <SectionTitle title="Portfolio" delay={0.15} color="text-softyellow" />
+      <div className="flex flex-col">
         {isMobile ? (
           <motion.div
-            className="flex flex-col gap-4 w-full"
+            className="flex flex-col gap-4"
             variants={containerVariants}
             initial="hidden"
             animate="visible"

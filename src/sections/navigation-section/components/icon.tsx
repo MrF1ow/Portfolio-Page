@@ -14,8 +14,8 @@ function Icon({ icon, isActive, title, size }: IconProps): JSX.Element {
   const IconComponent = icon;
 
   const activeClass = isActive
-    ? `text-regyellow ${size} transition duration-300 ease-in-out`
-    : `text-slate-50 ${size} hover:text-regyellow transition duration-300 ease-in-out`;
+    ? `text-softyellow ${size} transition duration-300 ease-in-out`
+    : `text-slate-50 ${size} hover:text-softyellow transition duration-300 ease-in-out`;
 
   return (
     <div
@@ -24,7 +24,7 @@ function Icon({ icon, isActive, title, size }: IconProps): JSX.Element {
     >
       {active && (
         <div className="h-10">
-          <h2 className="text-regyellow text-lg">{title}</h2>
+          <h2 className="text-softyellow text-lg">{title}</h2>
         </div>
       )}
       {!active && (

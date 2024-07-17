@@ -19,11 +19,11 @@ function MobileMenu({ toggleMenu }: { toggleMenu: () => void }): JSX.Element {
         <NavLink to="/" onClick={toggleMenu}>
           Home
         </NavLink>
-        <NavLink to="/projects" onClick={toggleMenu}>
-          Projects
-        </NavLink>
         <NavLink to="/about" onClick={toggleMenu}>
           About
+        </NavLink>
+        <NavLink to="/projects" onClick={toggleMenu}>
+          Projects
         </NavLink>
         <NavLink to="/contact" onClick={toggleMenu}>
           Contact

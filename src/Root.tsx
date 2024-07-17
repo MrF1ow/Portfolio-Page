@@ -17,6 +17,10 @@ function Root(props: any): JSX.Element {
       setIsMobile(window.innerWidth <= 976);
     };
 
+    if (window.innerWidth <= 976) {
+      setIsMobile(true);
+    }
+
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -26,11 +30,11 @@ function Root(props: any): JSX.Element {
 
   const { children } = props;
   return (
-    <main className="w-screen h-screen text-slate-50 font-league py-16 px-4 xl:max-w-screen-xl lg:max-w-screen-lg">
+    <main className="w-screen h-screen text-slate-50 font-league py-16 md:py-18 px-4 xl:max-w-screen-xl lg:max-w-screen-lg overflow-y-auto">
       <div className="mb-6 lg:mb-0">
         <NavigationSection activeNav={activeNav} isMobile={isMobile} />
       </div>
-      <div className="h-[90%] md:lg:h-full lg:translate-y-0 flex lg:w-[90%] xl:w-[96%] px-4 md:px-2 lg:px-0 py-4 lg:translate-x-[10%] xl:translate-x-[4%] translate-x-0">
+      <div className="h-[92%] w-full md:lg:h-full lg:translate-y-0 lg:w-[90%] xl:w-[96%] lg:translate-x-[10%] xl:translate-x-[4%] translate-x-0">
         {children || <Outlet context={[isMobile]} />}
       </div>
     </main>
