@@ -11,7 +11,7 @@ import NodeLogo from "../assets/framework-logos/nodejs.png";
 import ExpressLogo from "../assets/framework-logos/expressjs.png";
 import ReactLogo from "../assets/framework-logos/reactjs.png";
 import TailwindLogo from "../assets/framework-logos/tailwind.png";
-import DockerLogo from "../assets/framework-logos/docker.png";
+import VueLogo from "../assets/framework-logos/vue.png";
 import FlaskLogo from "../assets/framework-logos/flask.png";
 
 /* Tool Logo Imports */
@@ -19,7 +19,7 @@ import GitLogo from "../assets/tool-logos/git.png";
 import VscodeLogo from "../assets/tool-logos/vscode.png";
 import LinuxLogo from "../assets/tool-logos/linux.png";
 import MongodbLogo from "../assets/tool-logos/mongodb.png";
-import MariadbLogo from "../assets/tool-logos/mariadb.png";
+import DockerLogo from "../assets/tool-logos/docker.png";
 import AwsLogo from "../assets/tool-logos/aws.png";
 
 /*
@@ -101,17 +101,17 @@ export const frameworkExperience = [
     percent: 40,
   },
   {
-    title: "Docker",
-    years: 1,
-    color: "#0db7ed",
-    percent: 20,
-  },
-  {
     title: "Flask",
     years: 1,
     color: "#000000",
     percent: 20,
   },
+  {
+    title: 'Vue.js',
+    years: 1,
+    color: '#42b883',
+    percent: 20,
+  }
 ];
 
 export const toolsExperience = [
@@ -140,10 +140,10 @@ export const toolsExperience = [
     percent: 60,
   },
   {
-    title: "MariaDB",
+    title: "Docker",
     years: 1,
-    color: "#336791",
-    percent: 40,
+    color: "#0db7ed",
+    percent: 20,
   },
   {
     title: "AWS",
@@ -167,7 +167,7 @@ export const frameworkLogos = [
   ExpressLogo,
   ReactLogo,
   TailwindLogo,
-  DockerLogo,
+  VueLogo,
   FlaskLogo,
 ];
 
@@ -176,6 +176,6 @@ export const toolLogos = [
   VscodeLogo,
   LinuxLogo,
   MongodbLogo,
-  MariadbLogo,
+  DockerLogo,
   AwsLogo,
 ];
