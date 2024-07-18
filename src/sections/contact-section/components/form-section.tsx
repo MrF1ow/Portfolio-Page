@@ -22,6 +22,7 @@ function FormSection({ descriptor, type, width }: FormProps): JSX.Element {
           name={descriptor}
           placeholder={capitalizeFirstLetter(descriptor)}
           className={inputClass}
+          required={true}
         />
       ) : (
         <input
@@ -30,6 +31,7 @@ function FormSection({ descriptor, type, width }: FormProps): JSX.Element {
           name={descriptor}
           placeholder={capitalizeFirstLetter(descriptor)}
           className={inputClass}
+          required={true}
         />
       )}
     </>
