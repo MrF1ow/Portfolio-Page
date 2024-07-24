@@ -53,7 +53,7 @@ function ContactSection(): JSX.Element {
             </a>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 flex items-center h-full">
+        <div className="w-full lg:w-1/2 flex items-center h-full pb-6">
           <ContactForm />
         </div>
       </div>

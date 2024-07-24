@@ -28,9 +28,13 @@ function Root(props: any): JSX.Element {
     };
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [activeNav]);
+
   const { children } = props;
   return (
-    <main className="w-screen h-screen text-slate-50 font-league py-16 md:py-18 px-4 xl:max-w-screen-xl lg:max-w-screen-lg overflow-y-auto">
+    <main className="w-screen h-screen text-slate-50 font-league py-16 md:py-18 lg:py-16 xl:py-14 px-4 xl:max-w-screen-xl lg:max-w-screen-lg overflow-y-auto">
       <div className="mb-6 lg:mb-0">
         <NavigationSection activeNav={activeNav} isMobile={isMobile} />
       </div>

@@ -38,7 +38,7 @@ function AboutSection(): JSX.Element {
     <div className="flex flex-col w-full h-full">
       <SectionTitle title="About me" delay={0.15} color="text-softyellow" />
       <div className="flex flex-col w-full lg:flex-row">
-        <div className="w-full lg:w-1/2 pb-6 lg:pb-0">
+        <div className="w-full lg:w-1/2 pb-6">
           <Description text={aboutDescription} />
           <Outlet />
           <div className="flex flex-col gap-4 items-start">

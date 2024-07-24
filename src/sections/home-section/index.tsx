@@ -28,7 +28,9 @@ function HomeSection(): JSX.Element {
         <h2 className="text-2xl font-light lg:mb-8 md:mb-6 mb-4 items-center sm:justify-center text-center md:text-start">
           Computer Science @ Oregon State University
         </h2>
-        <Button title="Contact Me" path="/contact" />
+        <div className="pb-6">
+          <Button title="Contact Me" path="/contact" />
+        </div>
       </div>
       <div className="w-full lg:w-1/2 flex justify-center">
         <img

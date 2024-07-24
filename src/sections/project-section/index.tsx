@@ -40,7 +40,7 @@ function ProjectSection(): JSX.Element {
   return (
     <div className="flex flex-col h-full w-full">
       <SectionTitle title="Portfolio" delay={0.15} color="text-softyellow" />
-      <div className="flex flex-col">
+      <div className="flex flex-col pb-6">
         {/* Check if the user is on a mobile device */}
         {isMobile ? (
           <motion.div
@@ -62,7 +62,7 @@ function ProjectSection(): JSX.Element {
           </motion.div>
         ) : (
           <motion.div
-            className="flex flex-row flex-wrap gap-4"
+            className="flex flex-row flex-wrap gap-4 pb-6"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
