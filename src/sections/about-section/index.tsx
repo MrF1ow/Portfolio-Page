@@ -10,6 +10,11 @@ import SectionTitle from "../../components/section-title";
 import Description from "../../components/description";
 import CubeCanvas from "../../components/cube-canvas";
 import Button from "../../components/button";
+import {
+  languageLogos,
+  frameworkLogos,
+  toolLogos,
+} from "../../data/experience";
 
 /**
  * Content of the About Section
@@ -24,6 +29,10 @@ function AboutSection(): JSX.Element {
   const [activeItem, setActiveItem] = useState<string>("languages");
   const location = useLocation();
   const [isMobile] = useOutletContext();
+
+  const [languagePhotos, setLanguagePhotos] = useState(languageLogos);
+  const [frameworkPhotos, setFrameworkPhotos] = useState(frameworkLogos);
+  const [toolPhotos, setToolPhotos] = useState(toolLogos);
 
   useEffect(() => {
     if (location.pathname === "/about" || location.pathname === "/about/") {
@@ -64,6 +73,21 @@ function AboutSection(): JSX.Element {
         </div>
         {!isMobile && (
           <div className="w-1/2">
+            {/* {activeItem === "languages" && (
+              <>
+                <CubeCanvas photos={languagePhotos} />
+              </>
+            )}
+            {activeItem === "frameworks" && (
+              <>
+                <CubeCanvas photos={frameworkPhotos} />
+              </>
+            )}
+            {activeItem === "tools" && (
+              <>
+                <CubeCanvas photos={toolPhotos} />
+              </>
+            )} */}
             <CubeCanvas activeItem={activeItem} />
           </div>
         )}
