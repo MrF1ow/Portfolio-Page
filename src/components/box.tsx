@@ -52,6 +52,7 @@ function Box({ activeItem, position, rotation }: FullBoxProps): JSX.Element {
     }
   }, [windowSize]);
 
+
   // Load the photos to usable textures
 
   const language1 = useLoader(THREE.TextureLoader, languageLogos[0]);

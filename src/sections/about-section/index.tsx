@@ -73,21 +73,6 @@ function AboutSection(): JSX.Element {
         </div>
         {!isMobile && (
           <div className="w-1/2">
-            {/* {activeItem === "languages" && (
-              <>
-                <CubeCanvas photos={languagePhotos} />
-              </>
-            )}
-            {activeItem === "frameworks" && (
-              <>
-                <CubeCanvas photos={frameworkPhotos} />
-              </>
-            )}
-            {activeItem === "tools" && (
-              <>
-                <CubeCanvas photos={toolPhotos} />
-              </>
-            )} */}
             <CubeCanvas activeItem={activeItem} />
           </div>
         )}
