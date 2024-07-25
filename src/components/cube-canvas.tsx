@@ -34,10 +34,14 @@ function CubeCanvas({ activeItem }: StringObject): JSX.Element {
   //   }
   // }, [activeItem]);
 
+  useEffect (() => {
+
+  }, [])
+
   return (
     <Canvas>
       <ambientLight intensity={Math.PI / 2} />
-      {activeItem === "languages" && (
+      {/* {activeItem === "languages" && (
         <Box
           photos={languagePhotos}
           position={[0, 0.5, 0]}
@@ -53,7 +57,8 @@ function CubeCanvas({ activeItem }: StringObject): JSX.Element {
       )}
       {activeItem === "tools" && (
         <Box photos={toolPhotos} position={[0, 0.5, 0]} rotation={[0, 0, 0]} />
-      )}
+      )} */}
+      <Box activeItem={activeItem} position={[0, 0.5, 0]} rotation={[0, 0, 0]} />
       {/* <Box photos={photos} position={[0, 0.5, 0]} rotation={[0, 0, 0]} /> */}
       <EffectComposer>
         <Bloom

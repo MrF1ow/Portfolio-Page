@@ -15,7 +15,7 @@ interface GeneralBoxProps {
   rotation: [number, number, number];
 }
 interface FullBoxProps extends GeneralBoxProps {
-  photos: string[];
+  activeItem: string;
 }
 interface BoxSideProps extends GeneralBoxProps {
   texture: Texture;
