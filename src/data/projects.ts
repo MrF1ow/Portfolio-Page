@@ -3,6 +3,7 @@ import smallShellImg from "../assets/images/project-images/small_shell.png";
 import exerciseTrackerImg from "../assets/images/project-images/exercise_tracker.png";
 import imageEditorImg from "../assets/images/project-images/image_editor.png";
 import portfolioImg from "../assets/images/project-images/portfolio.png";
+import flashcardAi from "../assets/images/project-images/flashcard_ai.png";
 
 /*
  * Project Information
@@ -22,6 +23,24 @@ import portfolioImg from "../assets/images/project-images/portfolio.png";
  */
 export const projectInformation = [
   {
+    title: "Flashcard AI",
+    description:
+      "A flashcard application that utilizes AI to generate flashcards from text.",
+    comprisedOf: ["React", "Clerk", "Stripe", "OpenAI", "NextJS", "Tailwind"],
+    src: "https://github.com/MrF1ow/ai-flashcards-stripe",
+    size: "large",
+    image: flashcardAi,
+  },
+  {
+    title: "Small Shell",
+    description:
+      "A small shell that can execute commands and pipe commands together.",
+    comprisedOf: ["C"],
+    src: "https://github.com/MrF1ow/smallsh",
+    size: "small",
+    image: smallShellImg,
+  },
+  {
     title: "Playlist Partner",
     description:
       "Full Stack Application that allows users to generate filtered playlists utilizing the Spotify API.",
@@ -36,15 +55,6 @@ export const projectInformation = [
     src: "https://playlist-partner.vercel.app/",
     size: "large",
     image: playlistPartnerImg,
-  },
-  {
-    title: "Small Shell",
-    description:
-      "A small shell that can execute commands and pipe commands together.",
-    comprisedOf: ["C"],
-    src: "https://github.com/MrF1ow/smallsh",
-    size: "small",
-    image: smallShellImg,
   },
   {
     title: "Image Viewer & Editor",
@@ -66,8 +76,7 @@ export const projectInformation = [
   },
   {
     title: "Portfolio",
-    description:
-      "A portfolio website that showcases my projects and skills.",
+    description: "A portfolio website that showcases my projects and skills.",
     comprisedOf: ["React", "TypeScript", "Tailwind", "Vite", "ThreeJS"],
     src: "https://github.com/MrF1ow/Portfolio_Page2.0",
     size: "medium",
