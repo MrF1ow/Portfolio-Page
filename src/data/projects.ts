@@ -4,6 +4,7 @@ import exerciseTrackerImg from "../assets/images/project-images/exercise_tracker
 import imageEditorImg from "../assets/images/project-images/image_editor.png";
 import portfolioImg from "../assets/images/project-images/portfolio.png";
 import flashcardAi from "../assets/images/project-images/flashcard_ai.png";
+import aiPal from "../assets/images/project-images/aiPal.png";
 
 /*
  * Project Information
@@ -64,6 +65,15 @@ export const projectInformation = [
     src: "https://github.com/MrF1ow/Image_Viewer_Editor",
     size: "large",
     image: imageEditorImg,
+  },
+  {
+    title: "AI Pal",
+    description:
+      "A general purpose AI assistant that can answer a variety of questions.",
+    comprisedOf: ["NextJS", "Tailwind", "Llama3.1", "ClerkJS", "Redux"],
+    src: "https://ai-customer-support-8h290jqmo-ethan-flows-projects.vercel.app/",
+    size: "medium",
+    image: aiPal,
   },
   {
     title: "Exercise Tracker",
