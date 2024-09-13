@@ -3,7 +3,7 @@ import smallShellImg from "../assets/images/project-images/small_shell.png";
 import exerciseTrackerImg from "../assets/images/project-images/exercise_tracker.png";
 import imageEditorImg from "../assets/images/project-images/image_editor.png";
 import portfolioImg from "../assets/images/project-images/portfolio.png";
-import flashcardAi from "../assets/images/project-images/flashcard_ai.png";
+import flashcardAi from "../assets/images/project-images/flashcardAi.png";
 import aiPal from "../assets/images/project-images/aiPal.png";
 
 /*
@@ -28,7 +28,7 @@ export const projectInformation = [
     description:
       "A flashcard application that utilizes AI to generate flashcards from text.",
     comprisedOf: ["React", "Clerk", "Stripe", "OpenAI", "NextJS", "Tailwind"],
-    src: "https://github.com/MrF1ow/ai-flashcards-stripe",
+    src: "https://ai-flashcards-stripe-hahlktemt-ethan-flows-projects.vercel.app/",
     size: "large",
     image: flashcardAi,
   },
