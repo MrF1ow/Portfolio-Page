@@ -5,6 +5,7 @@ import imageEditorImg from "../assets/images/project-images/image_editor.png";
 import portfolioImg from "../assets/images/project-images/portfolio.png";
 import flashcardAi from "../assets/images/project-images/flashcardAi.png";
 import aiPal from "../assets/images/project-images/aiPal.png";
+import canvasMock from "../assets/images/project-images/canvas_mock.png";
 
 /*
  * Project Information
@@ -76,12 +77,21 @@ export const projectInformation = [
     image: aiPal,
   },
   {
+    title: "Canvas Mock API",
+    description:
+      "A mock API that simulates the functionality of Canvas.",
+    comprisedOf: ["Docker", "Typescript", "MongoDB"],
+    src: "https://github.com/MrF1ow/canvas_mock",
+    size: "medium",
+    image: canvasMock,
+  },
+  {
     title: "Exercise Tracker",
     description:
       "A MERN stack web application that allows user to create and track their workouts.",
     comprisedOf: ["React", "JavaScript", "Node.js", "Express", "MongoDB"],
     src: "https://github.com/MrF1ow/Exercise-Tracker",
-    size: "medium",
+    size: "small",
     image: exerciseTrackerImg,
   },
   {
