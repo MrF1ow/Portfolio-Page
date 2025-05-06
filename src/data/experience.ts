@@ -8,7 +8,7 @@ import JsLogo from "../assets/language-logos/javascript.png";
 
 /* Framework Logo Imports */
 import NodeLogo from "../assets/framework-logos/nodejs.png";
-import ExpressLogo from "../assets/framework-logos/expressjs.png";
+import NextLogo from "../assets/framework-logos/nextjs.png";
 import ReactLogo from "../assets/framework-logos/reactjs.png";
 import TailwindLogo from "../assets/framework-logos/tailwind.png";
 import VueLogo from "../assets/framework-logos/vue.png";
@@ -38,6 +38,18 @@ import AwsLogo from "../assets/tool-logos/aws.png";
  */
 export const languageExperience = [
   {
+    title: "TypeScript",
+    years: 3,
+    color: "#006ba6",
+    percent: 80,
+  },
+  {
+    title: "C/C++",
+    years: 3,
+    color: "#6c757d",
+    percent: 80,
+  },
+  {
     title: "JavaScript",
     years: 3,
     color: "#ff8800",
@@ -50,22 +62,10 @@ export const languageExperience = [
     percent: 80,
   },
   {
-    title: "C/C++",
-    years: 2,
-    color: "#6c757d",
-    percent: 60,
-  },
-  {
     title: "Python",
     years: 2,
     color: "#ffbc42",
     percent: 60,
-  },
-  {
-    title: "TypeScript",
-    years: 1,
-    color: "#006ba6",
-    percent: 40,
   },
   {
     title: "SQL",
@@ -77,28 +77,28 @@ export const languageExperience = [
 
 export const frameworkExperience = [
   {
+    title: "React",
+    years: 3,
+    color: "#61dafb",
+    percent: 60,
+  },
+  {
     title: "Node.js",
     years: 3,
     color: "#68a063",
     percent: 60,
   },
   {
-    title: "React",
-    years: 2,
-    color: "#61dafb",
-    percent: 60,
-  },
-  {
-    title: "Express.js",
+    title: "Next.js",
     years: 2,
     color: "#000000",
     percent: 60,
   },
   {
     title: "Tailwind CSS",
-    years: 1,
+    years: 2,
     color: "#38b2ac",
-    percent: 40,
+    percent: 60,
   },
   {
     title: "Flask",
@@ -117,33 +117,33 @@ export const frameworkExperience = [
 export const toolsExperience = [
   {
     title: "Git/GitHub",
-    years: 3,
+    years: 4,
     color: "#f34f29",
     percent: 80,
   },
   {
     title: "VS Code",
-    years: 3,
+    years: 4,
     color: "#007acc",
     percent: 80,
   },
   {
     title: "Linux",
-    years: 3,
+    years: 4,
     color: "#f5f5f5",
     percent: 80,
   },
   {
     title: "MongoDB",
-    years: 2,
+    years: 3,
     color: "#13aa52",
     percent: 60,
   },
   {
     title: "Docker",
-    years: 1,
+    years: 2,
     color: "#0db7ed",
-    percent: 20,
+    percent: 40,
   },
   {
     title: "AWS",
@@ -164,7 +164,7 @@ export const languageLogos = [
 
 export const frameworkLogos = [
   NodeLogo,
-  ExpressLogo,
+  NextLogo,
   ReactLogo,
   TailwindLogo,
   VueLogo,

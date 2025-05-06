@@ -6,6 +6,7 @@ import portfolioImg from "../assets/images/project-images/portfolio.png";
 import flashcardAi from "../assets/images/project-images/flashcardAi.png";
 import aiPal from "../assets/images/project-images/aiPal.png";
 import canvasMock from "../assets/images/project-images/canvas_mock.png";
+import foodable from "../assets/images/project-images/foodable.png"
 
 /*
  * Project Information
@@ -25,12 +26,20 @@ import canvasMock from "../assets/images/project-images/canvas_mock.png";
  */
 export const projectInformation = [
   {
+    title: "Foodable",
+    description: "Application to make food more doable",
+    comprisedOf: ["NextJS", "Clerk", "OpenAI", "Tailwind", "MongoDB", "TanStack"],
+    src: "https://github.com/MrF1ow/Foodable",
+    size: "large",
+    image: foodable
+  },
+  {
     title: "Flashcard AI",
     description:
       "A flashcard application that utilizes AI to generate flashcards from text.",
     comprisedOf: ["React", "Clerk", "Stripe", "OpenAI", "NextJS", "Tailwind"],
     src: "https://ai-flashcards-stripe-hahlktemt-ethan-flows-projects.vercel.app/",
-    size: "large",
+    size: "medium",
     image: flashcardAi,
   },
   {
