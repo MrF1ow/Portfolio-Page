@@ -38,7 +38,7 @@ export const projectInformation = [
     description:
       "A flashcard application that utilizes AI to generate flashcards from text.",
     comprisedOf: ["React", "Clerk", "Stripe", "OpenAI", "NextJS", "Tailwind"],
-    src: "https://ai-flashcards-stripe-hahlktemt-ethan-flows-projects.vercel.app/",
+    src: "https://github.com/MrF1ow/ai-flashcards-stripe",
     size: "medium",
     image: flashcardAi,
   },
@@ -81,7 +81,7 @@ export const projectInformation = [
     description:
       "A general purpose AI assistant that can answer a variety of questions.",
     comprisedOf: ["NextJS", "Tailwind", "Llama3.1", "ClerkJS", "Redux"],
-    src: "https://ai-customer-support-8h290jqmo-ethan-flows-projects.vercel.app/",
+    src: "https://github.com/MrF1ow/ai-community",
     size: "medium",
     image: aiPal,
   },

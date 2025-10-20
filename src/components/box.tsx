@@ -85,7 +85,7 @@ function Box({ activeItem, position, rotation }: FullBoxProps): JSX.Element {
   return (
     <>
       <mesh position={position} rotation={rotation} ref={meshRef} scale={scale}>
-        <boxGeometry args={[3, 3, 3]} />
+        <boxGeometry args={[2.75, 2.75, 2.75]} />
         <meshStandardMaterial transparent opacity={0.5} />
         <Edges threshold={20} color="white" />
 

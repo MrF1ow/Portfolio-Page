@@ -26,19 +26,22 @@ function HomeSection(): JSX.Element {
           color="text-slate-50"
         />
         <h2 className="text-2xl font-light lg:mb-8 md:mb-6 mb-4 items-center sm:justify-center text-center md:text-start">
-          Computer Science @ Oregon State University
+          Implementation Consultant @ FAST Enterprises
         </h2>
         <div className="pb-6">
           <Button title="Contact Me" path="/contact" />
         </div>
       </div>
       <div className="w-full lg:w-1/2 flex justify-center">
-        <img
-          src={pfp}
-          alt="profile"
-          className="rounded-full h-56 w-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80 md:w-64 md:h-64"
-        />
-      </div>
+  <div className="rounded-full overflow-hidden h-56 w-56 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-80 xl:w-80">
+    <img
+      src={pfp}
+      alt="profile"
+      className="w-full h-full object-cover object-[center_20%]"
+    />
+  </div>
+</div>
+
     </div>
   );
 }

@@ -39,7 +39,7 @@ import AwsLogo from "../assets/tool-logos/aws.png";
 export const languageExperience = [
   {
     title: "TypeScript",
-    years: 3,
+    years: 4,
     color: "#006ba6",
     percent: 80,
   },
@@ -47,70 +47,76 @@ export const languageExperience = [
     title: "C/C++",
     years: 3,
     color: "#6c757d",
-    percent: 80,
+    percent: 60,
   },
   {
     title: "JavaScript",
     years: 3,
     color: "#ff8800",
-    percent: 80,
+    percent: 60,
   },
   {
     title: "HTML/CSS",
     years: 3,
     color: "#52b788",
-    percent: 80,
+    percent: 60,
+  },
+  {
+  title: "SQL",
+  years: 2,
+  color: "#c9184a",
+  percent: 40
   },
   {
     title: "Python",
     years: 2,
     color: "#ffbc42",
-    percent: 60,
+    percent: 40,
   },
   {
-    title: "SQL",
-    years: 1,
-    color: "#c9184a",
-    percent: 30,
-  },
+  title: "C#",
+  years: 1,
+  color: "#912cb0",
+  percent: 20,
+  }
 ];
 
 export const frameworkExperience = [
   {
     title: "React",
-    years: 3,
+    years: 4,
     color: "#61dafb",
-    percent: 60,
+    percent: 100,
   },
   {
     title: "Node.js",
     years: 3,
     color: "#68a063",
-    percent: 60,
+    percent: 75,
   },
   {
     title: "Next.js",
     years: 2,
     color: "#000000",
-    percent: 60,
+    percent: 50,
   },
   {
     title: "Tailwind CSS",
     years: 2,
     color: "#38b2ac",
-    percent: 60,
+    percent: 50,
   },
   {
     title: "Flask",
     years: 1,
     color: "#000000",
-    percent: 20,
+    percent: 25,
   },
   {
     title: 'Vue.js',
     years: 1,
     color: '#42b883',
-    percent: 20,
+    percent: 25,
   }
 ];
 
