@@ -29,7 +29,7 @@ export const projectInformation = [
     title: "Foodable",
     description: "Application to make food more doable",
     comprisedOf: ["NextJS", "Clerk", "OpenAI", "Tailwind", "MongoDB", "TanStack"],
-    src: "https://github.com/MrF1ow/Foodable",
+    src: "https://github.com/MrF1ow/Foodable_old",
     size: "large",
     image: foodable
   },
