@@ -26,7 +26,7 @@ function HomeSection(): JSX.Element {
           color="text-slate-50"
         />
         <h2 className="text-2xl font-light lg:mb-8 md:mb-6 mb-4 items-center sm:justify-center text-center md:text-start">
-          Implementation Consultant @ FAST Enterprises
+          Full-Stack Engineer 
         </h2>
         <div className="pb-6">
           <Button title="Contact Me" path="/contact" />
